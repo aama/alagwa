@@ -41,7 +41,7 @@
  :termclusters [
                 {:label "alagwa-V-conj1-pres-aff"
                  :note "Mous2016 Table 6.1 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :kitahh
                           :derv :Imperfective
@@ -59,7 +59,7 @@
                  }
                 {:label "alagwa-V-conj1-pres-neg"
                  :note "Mous2016 Table 6.1 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :kitahh
                           :derv :Imperfective
@@ -77,7 +77,7 @@
                  }
                 {:label "alagwa-V-conj1-past-neg"
                  :note "Mous2016 Table 6.2 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :kitahh
                           :derv :Imperfective
@@ -95,7 +95,7 @@
                  }
                 {:label "alagwa-V-conj2-pres-aff"
                  :note "Mous2016 Table 6.3 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :xaw
                           :conjClass :C2
@@ -112,7 +112,7 @@
                  }
                 {:label "alagwa-V-conj2-pres-neg"
                  :note "Mous2016 Table 6.3 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :xaw
                           :conjClass :C2
@@ -129,7 +129,7 @@
                  }
                 {:label "alagwa-V-conj2-past-aff"
                  :note "Mous2016 Table 6.4 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :slaw
                           :conjClass :C2
@@ -146,7 +146,7 @@
                  }
                 {:label "alagwa-V-conj2-past-neg"
                  :note "Mous2016 Table 6.4 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :slaw
                           :conjClass :C2
@@ -163,7 +163,7 @@
                  }
                 {:label "alacwa-V-conj3-pres-aff"
                  :note "Mous2016 Table 6.5 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
                           :conjClass :C3
@@ -180,7 +180,7 @@
                  }
                 {:label "alagwa-V-conj3-pres-neg"
                  :note "Mous2016 Table 6.5 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
                           :conjClass :C3
@@ -197,7 +197,7 @@
                  }
                 {:label "alagwa-V-conj3-past-aff"
                  :note "Mous2016 Table 6.6 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
                           :conjClass :C3
@@ -214,7 +214,7 @@
                  }
                 {:label "alagwa-V-conj3-past-neg"
                  :note "Mous2016 Table 6.6 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
                           :conjClass :C3
@@ -231,7 +231,7 @@
                  }
                 {:label "alagwa-V-conj4-pres-aff"
                  :note "Mous2016 Table 6.7 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :ibiit
                           :conjClass :C4
@@ -248,7 +248,7 @@
                  }
                 {:label "alagwa-V-conj4-pres-neg"
                  :note "Mous2016 Table 6.7 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :ibiit
                           :conjClass :C4
@@ -265,7 +265,7 @@
                  }
                 {:label "alagwa-V-conj4-past-aff"
                  :note "Mous2016 Table 6.8 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :hhe7ees
                           :conjClass :C4
@@ -282,7 +282,7 @@
                  }
                 {:label "alagwa-V-conj4-past-neg"
                  :note "Mous2016 Table 6.8 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :hhe7ees
                           :conjClass :C4
@@ -299,7 +299,7 @@
                  }
                 {:label "alagwa-V-prohibitive"
                  :note "Mous2016 Table 6.11 "
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :doosl
                           :conjClass :C4
@@ -354,7 +354,7 @@
                 {:label "alagwa-VSel-basic"
                  :note "Mous2016 Table 7.1. "
                  :common {:pos :Verb,
-                          :vmorphclass :BasicSel 
+                          :vmorphClass :BasicSel 
                           :clauseTypeSel :NonConsecutiveSel}         
                  :terms [[:selCase :number :person :gender  :token],
                          [:SubjSel :NA :Person1 :Common  "a"],
@@ -374,7 +374,7 @@
                 {:label "alagwa-VSel-basic"
                  :note "Mous2016 Table 7.2. "
                  :common {:pos :Verb,
-                          :vmorphclass :BasicSel 
+                          :vmorphClass :BasicSel 
                           :clauseTypeSel :ConsecutiveSel}         
                  :terms [[:selCase :number :person :gender  :token],
                          [:SubjSel :NA :Person1 :Common  "nanga"],
@@ -394,7 +394,7 @@
                 {:label "alagwa-VSel-prefixes"
                  :note "Mous2016 Table 7.4. Cooccurrence order: l/n-s-k-BASIC-SUFFIX-CLITIC"
                  :common {:pos :Verb,
-                          :vmorphclass :SelPrefixes }         
+                          :vmorphClass :SelPrefixes }         
                  :terms [[:selFunction :token],
                          [:Optative "l-"],
                          [:Consec_Optative "n-"],
@@ -408,7 +408,7 @@
                 {:label "alagwa-VSel-prefixes-Exx"
                  :note "Mous2016 Tables 7.5,8."
                  :common {:pos :Verb,
-                          :vmorphclass :SelPrefixesExx }         
+                          :vmorphClass :SelPrefixesExx }         
                  :terms [[:selSequence :token],
                          [:BEN_OM "soo < s-oo"],
                          [:BEN_O1SG "si < s-i"],
@@ -426,7 +426,7 @@
                 {:label "alagwa-VSel-suffixes"
                  :note "Mous2016 Table 7.6. "
                  :common {:pos :Verb,
-                          :vmorphclass :SelSuffix }         
+                          :vmorphClass :SelSuffix }         
                  :terms [[:selFunction :token],
                          [:PastGeneral "-áa"],
                          [:Ablative "-aa"],
@@ -436,7 +436,7 @@
                 {:label "alagwa-VSel-clitics"
                  :note "Mous2016 Table 7.7. "
                  :common {:pos :Verb,
-                          :vmorphclass :SelClitic }         
+                          :vmorphClass :SelClitic }         
                  :terms [[:selFunction :token],
                          [:Applicative "-ee"],
                          [:Innstrumental "-ra"]]
