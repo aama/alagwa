@@ -6,27 +6,29 @@
  :datasourceNotes ""
  :geodemoURL "http://www.ethnologue.com/language/wbj"
  :geodemoTXT "Tanzania, Dodoma region: Kondoa district. Approximately 30,000 speakers."
- :schemata {:case [:Ablative :Allative :Locative],
-            :clauseTypeSel [:ConsecutiveSel :NonConsecutiveSel],
-            :conjClass [:C1 :C2 :C3 :C4],
-            :degree [:D1 :D2 :D3 :D4],
-            :derv [:Imperfective],
-            :formClass [:Long :Short],
-            :genHead [:Fem :Masc :Neut],
-            :gender [:Common :Fem :Masc :Neut],
-            :imptvFunction [:object :object_pluralAddressee :pluralAddressee :ventive :ventive_obejct_pluralAddressee :ventive_object :ventive_pluralAddressee],
-            :number [:NA :Plural :Singular],
-            :person [:Person1 :Person2 :Person3 :PersonRecip],
-            :polarity [:Affirmative :Negative],
-            :pos [:Noun :Pronoun :Verb],
-            :proClass [:Anaphoric :Demonstrative :DemonstrativeInd :DemonstrativeLoc :DirSuff :Independent :PossInd :PossSuff],
-            :selCase [:ObjSel :SubjSel],
-            :selFunction [:Ablative :Applicative :Beneficient :Consec_Optative :ImpersSubj :ImpersSubjObjRel :Innstrumental :Optative :PastGeneral :Perfect :PredFocus :SubjFocus :Subordinate :Ventive_Immediate],
-            :selSequence [:BEN_IPS_O1PL :BEN_IPS_O1SG_PF :BEN_IPS_O2SGF :BEN_IPS_OF :BEN_IPS_OM_PAST :BEN_IPS_OM_PF :BEN_O1SG :BEN_OM :BEN_OM_PF :IPS_BEN_SUB_02M_PF :IPS_BEN_SUB_O1PL_PF :IPS_BEN_SUB_O2F_PF],
-            :sentFunction [:backgrounding :questionY-N :insisting :negation :subordination],
-            :tam [:Past :Present :Prohibitive],
-            :vmorphClass [:BasicSel  :Finite :SelClitic :SelPrefixes :SelPrefixesExx :SelSuffix :Affix_SubjMark :ImptvSuffix :SententialSuffix]
-            }
+ :schemata {:lexeme [:doosl  :hhe7ees :ibiit :kitahh :slaw :waar :xaw],
+ :case [:Ablative :Allative :Locative],
+ :clauseTypeSel [:ConsecutiveSel :NonConsecutiveSel],
+ :conjClass [:C1 :C2 :C3 :C4],
+ :degree [:D1 :D2 :D3 :D4],
+ :derv [:Imperfective],
+ :formClass [:Long :Short],
+ :genHead [:Fem :Masc :Neut],
+ :gender [:Common :Fem :Masc :Neut],
+ :imptvFunction [:object :object_pluralAddressee :pluralAddressee :ventive :ventive_obejct_pluralAddressee :ventive_object :ventive_pluralAddressee],
+ :number [:NA :Plural :Singular],
+ :person [:Person1 :Person2 :Person3 :PersonRecip],
+ :pmorphClass [:ProMorph],
+ :polarity [:Affirmative :Negative],
+ :pos [:Noun :Pronoun :Verb],
+ :proClass [:Anaphoric :Demonstrative :DemonstrativeInd :DemonstrativeLoc :DirSuff :Independent :PossInd :PossSuff],
+ :selCase [:ObjSel :SubjSel],
+ :selFunction [:Ablative :Applicative :Beneficient :Consec_Optative :ImpersSubj :ImpersSubjObjRel :Innstrumental :Optative :PastGeneral :Perfect :PredFocus :SubjFocus :Subordinate :Ventive_Immediate],
+ :selSequence [:BEN_IPS_O1PL :BEN_IPS_O1SG_PF :BEN_IPS_O2SGF :BEN_IPS_OF :BEN_IPS_OM_PAST :BEN_IPS_OM_PF :BEN_O1SG :BEN_OM :BEN_OM_PF :IPS_BEN_SUB_02M_PF :IPS_BEN_SUB_O1PL_PF :IPS_BEN_SUB_O2F_PF],
+ :sentFunction [:backgrounding :insisting :negation :questionY-N :subordination],
+ :tam [:Past :Present :Prohibitive],
+ :vmorphClass [:Affix_SubjMark :BasicSel :Finite :ImptvSuffix :SelClitic :SelPrefixes :SelPrefixesExx :SelSuffix :SententialSuffix]
+ }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
@@ -444,7 +446,7 @@
                 {:label "alagwa-pro-dem"
                  :note "Mous2016 Tables 3.2, 3.3. Token-note: haree 'woman', hiru 'man', hira 'men'"
                  :common {:person :Person3,
-                          :pos :Pronoun,
+                          :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Demonstrative}
                  :terms [[:gender :degree  :token :token-note],
                          [:Fem :D1 "-ti" "haréeti"]
@@ -463,7 +465,7 @@
                 {:label "alagwa-pro-dem-ind"
                  :note "Mous2016 Table 3.4"
                  :common {:person :Person3,
-                          :pos :Pronoun,
+                          :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :DemonstrativeInd}
                  :terms [[:gender :degree  :token],
                          [:Fem :D1 "héet"]
@@ -482,7 +484,7 @@
                 {:label "alagwa-pro-dem-loc"
                  :note "Mous2016 Table 3.5"
                  :common {:person :Person3,
-                          :pos :Pronoun,
+                          :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :DemonstrativeLoc}
                  :terms [[:case :degree  :token],
                          [:Locative :D1  "ta"]
@@ -500,7 +502,7 @@
                  }
                 {:label "alagwa-pro-poss-suff"
                  :note "Mous2016 Tables 3.6, 3.7. Token-note: slee 'cow', do'o 'house', ma'ay 'water'"
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :PossSuff}
                  :terms [[:genHead :number :person :token :token-note],
                          [:Fem :Singular :Person1 "-r-i" "sleerí"],
@@ -524,7 +526,7 @@
                  }
                 {:label "alagwa-pro-poss-ind"
                  :note "Mous2016 Tables 3.8. "
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :PossInd}
                  :terms [[:genHead :number :person :token],
                          [:Fem :Singular :Person1  "tóo'"],
@@ -558,7 +560,7 @@
                  }
                 {:label "alagwa-pro-anaphoric"
                  :note "Mous2016 Table 3.11. "
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Anaphoric}
                  :terms [[:gender :token],
                          [:Fem "tá"]
@@ -567,7 +569,7 @@
                  }
                 {:label "alagwa-pro-ind"
                  :note "Mous2016 Table 3.12. "
-                 :common {:pos :Pronoun,
+                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:number :person :gender :token],
                          [:Singular :Person1 :Common  "ána"],
