@@ -2,33 +2,33 @@
  :lang :alagwa
  :subfamily "SCushitic"
  :sgpref "alg"
- :datasource "Mous2016"
+ :datasource "Mous2016' abbrev. in :note as 'MOt[N]' for 'Mous2016 Table N' "
  :datasourceNotes ""
  :geodemoURL "http://www.ethnologue.com/language/wbj"
  :geodemoTXT "Tanzania, Dodoma region: Kondoa district. Approximately 30,000 speakers."
  :schemata {:lexeme [:doosl  :hhe7ees :ibiit :kitahh :slaw :waar :xaw],
- :case [:Ablative :Allative :Locative],
- :clauseTypeSel [:ConsecutiveSel :NonConsecutiveSel],
- :conjClass [:C1 :C2 :C3 :C4],
- :degree [:D1 :D2 :D3 :D4],
- :derv [:Imperfective],
- :formClass [:Long :Short],
- :genHead [:Fem :Masc :Neut],
- :gender [:Common :Fem :Masc :Neut],
- :imptvFunction [:object :object_pluralAddressee :pluralAddressee :ventive :ventive_obejct_pluralAddressee :ventive_object :ventive_pluralAddressee],
- :number [:NA :Plural :Singular],
- :person [:Person1 :Person2 :Person3 :PersonRecip],
- :pmorphClass [:ProMorph],
- :polarity [:Affirmative :Negative],
- :pos [:Noun :Pronoun :Verb],
- :proClass [:Anaphoric :Demonstrative :DemonstrativeInd :DemonstrativeLoc :DirSuff :Independent :PossInd :PossSuff],
- :selCase [:ObjSel :SubjSel],
- :selFunction [:Ablative :Applicative :Beneficient :Consec_Optative :ImpersSubj :ImpersSubjObjRel :Innstrumental :Optative :PastGeneral :Perfect :PredFocus :SubjFocus :Subordinate :Ventive_Immediate],
- :selSequence [:BEN_IPS_O1PL :BEN_IPS_O1SG_PF :BEN_IPS_O2SGF :BEN_IPS_OF :BEN_IPS_OM_PAST :BEN_IPS_OM_PF :BEN_O1SG :BEN_OM :BEN_OM_PF :IPS_BEN_SUB_02M_PF :IPS_BEN_SUB_O1PL_PF :IPS_BEN_SUB_O2F_PF],
- :sentFunction [:backgrounding :insisting :negation :questionY-N :subordination],
- :tam [:Past :Present :Prohibitive],
- :vmorphClass [:Affix_SubjMark :BasicSel :Finite :ImptvSuffix :SelClitic :SelPrefixes :SelPrefixesExx :SelSuffix :SententialSuffix]
- }
+            :case [:Ablative :Allative :Locative],
+            :clauseTypeSel [:ConsecutiveSel :NonConsecutiveSel],
+            :conjClass [:C1 :C2 :C3 :C4],
+            :degree [:D1 :D2 :D3 :D4],
+            :derv [:Imperfective],
+            :formClass [:Long :Short],
+            :genHead [:Fem :Masc :Neut],
+            :gender [:Common :Fem :Masc :Neut],
+            :imptvFunction [:object :object_pluralAddressee :pluralAddressee :ventive :ventive_obejct_pluralAddressee :ventive_object :ventive_pluralAddressee],
+            :number [:NA :Plural :Singular],
+            :person [:Person1 :Person2 :Person3 :PersonRecip],
+            :pmorphClass [:ProMorph],
+            :polarity [:Affirmative :Negative],
+            :pos [:Noun :Pronoun :Verb],
+            :proClass [:Anaphoric :Demonstrative :DemonstrativeInd :DemonstrativeLoc :DirSuff :Independent :PossInd :PossSuff],
+            :selCase [:ObjSel :SubjSel],
+            :selFunction [:Ablative :Applicative :Beneficient :Consec_Optative :ImpersSubj :ImpersSubjObjRel :Innstrumental :Optative :PastGeneral :Perfect :PredFocus :SubjFocus :Subordinate :Ventive_Immediate],
+            :selSequence [:BEN_IPS_O1PL :BEN_IPS_O1SG_PF :BEN_IPS_O2SGF :BEN_IPS_OF :BEN_IPS_OM_PAST :BEN_IPS_OM_PF :BEN_O1SG :BEN_OM :BEN_OM_PF :IPS_BEN_SUB_02M_PF :IPS_BEN_SUB_O1PL_PF :IPS_BEN_SUB_O2F_PF],
+            :sentFunction [:backgrounding :insisting :negation :questionY-N :subordination],
+            :tam [:Past :Present :Prohibitive],
+            :vmorphClass [:Affix_SubjMark :BasicSel :Finite :ImptvSuffix :SelClitic :SelPrefixes :SelPrefixesExx :SelSuffix :SententialSuffix]
+            }
  :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
@@ -42,7 +42,7 @@
            :xaw {:lemma "", :gloss "come"} },
  :termclusters [
                 {:label "alagwa-V-conj1-pres-aff"
-                 :note "Mous2016 Table 6.1 "
+                 :note "MOt6.1 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :kitahh
@@ -60,7 +60,7 @@
                          [:Plural :Person3 :Common  "a kitahhamaa;"]]
                  }
                 {:label "alagwa-V-conj1-pres-neg"
-                 :note "Mous2016 Table 6.1 "
+                 :note "MOt6.1 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :kitahh
@@ -78,7 +78,7 @@
                          [:Plural :Person3 :Common  "a kitahhamaa;-áabasl"]]
                  }
                 {:label "alagwa-V-conj1-past-neg"
-                 :note "Mous2016 Table 6.2 "
+                 :note "MOt6.2 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :kitahh
@@ -96,7 +96,7 @@
                          [:Plural :Person3 :Common   "in kitahhánee'-íibasl"]]
                  }
                 {:label "alagwa-V-conj2-pres-aff"
-                 :note "Mous2016 Table 6.3 "
+                 :note "MOt6.3 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :xaw
@@ -113,7 +113,7 @@
                          [:Plural :Person3 :Common   "a xayaa'"]]
                  }
                 {:label "alagwa-V-conj2-pres-neg"
-                 :note "Mous2016 Table 6.3 "
+                 :note "MOt6.3 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :xaw
@@ -130,7 +130,7 @@
                          [:Plural :Person3 :Common  "a xayaa'-áabasl"]]
                  }
                 {:label "alagwa-V-conj2-past-aff"
-                 :note "Mous2016 Table 6.4 "
+                 :note "MOt6.4 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :slaw
@@ -147,7 +147,7 @@
                          [:Plural :Person3 :Common  "a slayee'"]]
                  }
                 {:label "alagwa-V-conj2-past-neg"
-                 :note "Mous2016 Table 6.4 "
+                 :note "MOt6.4 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :slaw
@@ -164,7 +164,7 @@
                          [:Plural :Person3 :Common  "a slayee'-íibasl"]]
                  }
                 {:label "alacwa-V-conj3-pres-aff"
-                 :note "Mous2016 Table 6.5 "
+                 :note "MOt6.5 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
@@ -181,7 +181,7 @@
                          [:Plural :Person3 :Common  "a wanaa."]]
                  }
                 {:label "alagwa-V-conj3-pres-neg"
-                 :note "Mous2016 Table 6.5 "
+                 :note "MOt6.5 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
@@ -198,7 +198,7 @@
                          [:Plural :Person3 :Common  "a wanaa'-áabasl"]]
                  }
                 {:label "alagwa-V-conj3-past-aff"
-                 :note "Mous2016 Table 6.6 "
+                 :note "MOt6.6 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
@@ -215,7 +215,7 @@
                          [:Plural :Person3 :Common  "in wanee'"]]
                  }
                 {:label "alagwa-V-conj3-past-neg"
-                 :note "Mous2016 Table 6.6 "
+                 :note "MOt6.6 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :waar
@@ -232,7 +232,7 @@
                          [:Plural :Person3 :Common  "in wanee'-íibasl"]]
                  }
                 {:label "alagwa-V-conj4-pres-aff"
-                 :note "Mous2016 Table 6.7 "
+                 :note "MOt6.7 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :ibiit
@@ -249,7 +249,7 @@
                          [:Plural :Person3 :Common  "a ibiitiya'"]]
                  }
                 {:label "alagwa-V-conj4-pres-neg"
-                 :note "Mous2016 Table 6.7 "
+                 :note "MOt6.7 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :ibiit
@@ -266,7 +266,7 @@
                          [:Plural :Person3 :Common  "a ibiitiya'-áabasl"]]
                  }
                 {:label "alagwa-V-conj4-past-aff"
-                 :note "Mous2016 Table 6.8 "
+                 :note "MOt6.8 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :hhe7ees
@@ -283,7 +283,7 @@
                          [:Plural :Person3 :Common  "an hhe'eesir "]]
                  }
                 {:label "alagwa-V-conj4-past-neg"
-                 :note "Mous2016 Table 6.8 "
+                 :note "MOt6.8 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :hhe7ees
@@ -300,7 +300,7 @@
                          [:Plural :Person3 :Common  "an hhe'eesir-íibasl"]]
                  }
                 {:label "alagwa-V-prohibitive"
-                 :note "Mous2016 Table 6.11 "
+                 :note "MOt6.11 "
                  :common {:vmorphClass :Finite
                           :pos :Verb,
                           :lexeme :doosl
@@ -317,7 +317,7 @@
                          [:Plural :Person3 :Common  "maaree' doosl- iy-ee'-basl"]]
                  }
                 {:label "alagwa-V-SubjMarkers"
-                 :note "Mous2016 Table 6.9. Suff are past or present except where noted. "
+                 :note "MOt6.9 :: Suff are past or present except where noted. "
                  :common {:pos :Verb,
                           :vmorphClass :Affix_SubjMark}
                  :terms [[:number :person :gender :token],
@@ -330,7 +330,7 @@
                          [:Plural :Person3 :Common  "-i-aa' ~-ri (Past only)"]]
                  }
                 {:label "alagwa-V-SententialSuff"
-                 :note "Mous2016 Table 6.12. "
+                 :note "MOt6.12"
                  :common {:pos :Verb,
                           :vmorphClass :SententialSuffix}
                  :terms [[:sentFunction :token],
@@ -341,7 +341,7 @@
                          [:questionY-N "extra higher rise plus fall"]]
                  }
                 {:label "alagwa-V-ImptvSuff"
-                 :note "Mous2016 Table 6.13. "
+                 :note "MOt6.13"
                  :common {:pos :Verb,
                           :vmorphClass :ImptvSuffix}
                  :terms [[:imptvFunction :token],
@@ -354,7 +354,7 @@
                          [:ventive_obejct_pluralAddressee "-aar-aak-inn"]]
                  }
                 {:label "alagwa-VSel-basic"
-                 :note "Mous2016 Table 7.1. "
+                 :note "MOt7.1"
                  :common {:pos :Verb,
                           :vmorphClass :BasicSel 
                           :clauseTypeSel :NonConsecutiveSel}         
@@ -374,7 +374,7 @@
                          [:ObjSel :Plural :PersonRecip :Common "kunu"]]
                  }
                 {:label "alagwa-VSel-basic"
-                 :note "Mous2016 Table 7.2. "
+                 :note "MOt7.2"
                  :common {:pos :Verb,
                           :vmorphClass :BasicSel 
                           :clauseTypeSel :ConsecutiveSel}         
@@ -394,7 +394,7 @@
                          [:ObjSel :Plural :PersonRecip :Common  "nungu"]]
                  }
                 {:label "alagwa-VSel-prefixes"
-                 :note "Mous2016 Table 7.4. Cooccurrence order: l/n-s-k-BASIC-SUFFIX-CLITIC"
+                 :note "MOt7.4 :: Cooccurrence order: l/n-s-k-BASIC-SUFFIX-CLITIC"
                  :common {:pos :Verb,
                           :vmorphClass :SelPrefixes }         
                  :terms [[:selFunction :token],
@@ -408,7 +408,7 @@
                          [:ImpersSubjObjRel "ti-"]]
                  }
                 {:label "alagwa-VSel-prefixes-Exx"
-                 :note "Mous2016 Tables 7.5,8."
+                 :note "MOt7.5&8"
                  :common {:pos :Verb,
                           :vmorphClass :SelPrefixesExx }         
                  :terms [[:selSequence :token],
@@ -426,7 +426,7 @@
                          [:IPS_BEN_SUB_O1PL_PF "tu-su-kunu"]]
                  }
                 {:label "alagwa-VSel-suffixes"
-                 :note "Mous2016 Table 7.6. "
+                 :note "MOt7.6"
                  :common {:pos :Verb,
                           :vmorphClass :SelSuffix }         
                  :terms [[:selFunction :token],
@@ -436,7 +436,7 @@
                          [:PredFocus "-n"]]
                  }
                 {:label "alagwa-VSel-clitics"
-                 :note "Mous2016 Table 7.7. "
+                 :note "MOt7.7"
                  :common {:pos :Verb,
                           :vmorphClass :SelClitic }         
                  :terms [[:selFunction :token],
@@ -444,7 +444,7 @@
                          [:Innstrumental "-ra"]]
                  }
                 {:label "alagwa-pro-dem"
-                 :note "Mous2016 Tables 3.2, 3.3. Token-note: haree 'woman', hiru 'man', hira 'men'"
+                 :note "MOt3.2&3 :: Token-note: haree 'woman', hiru 'man', hira 'men'"
                  :common {:person :Person3,
                           :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Demonstrative}
@@ -463,7 +463,7 @@
                          [:Neut :D4 "-wa-!d" "hirawád"]]
                  }
                 {:label "alagwa-pro-dem-ind"
-                 :note "Mous2016 Table 3.4"
+                 :note "MOt3.4"
                  :common {:person :Person3,
                           :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :DemonstrativeInd}
@@ -482,7 +482,7 @@
                          [:Neut :D4 "kwád"]]
                  }
                 {:label "alagwa-pro-dem-loc"
-                 :note "Mous2016 Table 3.5"
+                 :note "MOt3.5"
                  :common {:person :Person3,
                           :pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :DemonstrativeLoc}
@@ -501,7 +501,7 @@
                          [:Ablative :D4  "hadaa"]]
                  }
                 {:label "alagwa-pro-poss-suff"
-                 :note "Mous2016 Tables 3.6, 3.7. Token-note: slee 'cow', do'o 'house', ma'ay 'water'"
+                 :note "MOt3.6&7 :: Token-note: slee 'cow', do'o 'house', ma'ay 'water'"
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :PossSuff}
                  :terms [[:genHead :number :person :token :token-note],
@@ -525,7 +525,7 @@
                          [:Neut :Plural :Person3 "-wa-'in" "ma'aywá'in"]]
                  }
                 {:label "alagwa-pro-poss-ind"
-                 :note "Mous2016 Tables 3.8. "
+                 :note "MOt3.8"
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :PossInd}
                  :terms [[:genHead :number :person :token],
@@ -549,7 +549,7 @@
                          [:Neut :Plural :Person3  "kwá'in"]]
                  }
                 {:label "alagwa-dir-suff"
-                 :note "Mous2016 Table 3.9. "
+                 :note "MOt3.9"
                  :common {:pos :Noun,
                           :proClass :DirSuff}
                  :terms [[:case :formClass :token],
@@ -559,7 +559,7 @@
                          [:Ablative :Short "-a"]]
                  }
                 {:label "alagwa-pro-anaphoric"
-                 :note "Mous2016 Table 3.11. "
+                 :note "MOt3.11"
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Anaphoric}
                  :terms [[:gender :token],
@@ -568,7 +568,7 @@
                          [:Neut "kó"]]
                  }
                 {:label "alagwa-pro-ind"
-                 :note "Mous2016 Table 3.12. "
+                 :note "MOt3.12"
                  :common {:pos :Pronoun, :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:number :person :gender :token],
