@@ -1,0 +1,791 @@
+{
+  "lang": "alagwa",
+  "subfamily": "SCushitic",
+  "sgpref": "alg",
+  "datasource": "Mous2016ZZ abbrev. in :note as ZZMOt[N]ZZ for ZZMous2016 Table NZZ ",
+  "datasourceNotes": "",
+  "geodemoURL": "http://www.ethnologue.com/language/wbj",
+  "geodemoTXT": "Tanzania, Dodoma region: Kondoa district. Approximately 30,000 speakers.",
+  "schemata": {
+    "person": [
+      "Person1",
+      "Person2",
+      "Person3",
+      "PersonRecip"
+    ],
+    "selCase": [
+      "ObjSel",
+      "SubjSel"
+    ],
+    "number": [
+      "NA",
+      "Plural",
+      "Singular"
+    ],
+    "vmorphClass": [
+      "Affix_SubjMark",
+      "BasicSel",
+      "Finite",
+      "ImptvSuffix",
+      "SelClitic",
+      "SelPrefixes",
+      "SelPrefixesExx",
+      "SelSuffix",
+      "SententialSuffix"
+    ],
+    "formClass": [
+      "Long",
+      "Short"
+    ],
+    "genHead": [
+      "Fem",
+      "Masc",
+      "Neut"
+    ],
+    "pos": [
+      "Noun",
+      "Pronoun",
+      "Verb"
+    ],
+    "derv": [
+      "Imperfective"
+    ],
+    "proClass": [
+      "Anaphoric",
+      "Demonstrative",
+      "DemonstrativeInd",
+      "DemonstrativeLoc",
+      "DirSuff",
+      "Independent",
+      "PossInd",
+      "PossSuff"
+    ],
+    "lexeme": [
+      "doosl",
+      "hhe7ees",
+      "ibiit",
+      "kitahh",
+      "slaw",
+      "waar",
+      "xaw"
+    ],
+    "selSequence": [
+      "BEN_IPS_O1PL",
+      "BEN_IPS_O1SG_PF",
+      "BEN_IPS_O2SGF",
+      "BEN_IPS_OF",
+      "BEN_IPS_OM_PAST",
+      "BEN_IPS_OM_PF",
+      "BEN_O1SG",
+      "BEN_OM",
+      "BEN_OM_PF",
+      "IPS_BEN_SUB_02M_PF",
+      "IPS_BEN_SUB_O1PL_PF",
+      "IPS_BEN_SUB_O2F_PF"
+    ],
+    "conjClass": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "pmorphClass": [
+      "ProMorph"
+    ],
+    "imptvFunction": [
+      "object",
+      "object_pluralAddressee",
+      "pluralAddressee",
+      "ventive",
+      "ventive_obejct_pluralAddressee",
+      "ventive_object",
+      "ventive_pluralAddressee"
+    ],
+    "case": [
+      "Ablative",
+      "Allative",
+      "Locative"
+    ],
+    "degree": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ],
+    "selFunction": [
+      "Ablative",
+      "Applicative",
+      "Beneficient",
+      "Consec_Optative",
+      "ImpersSubj",
+      "ImpersSubjObjRel",
+      "Innstrumental",
+      "Optative",
+      "PastGeneral",
+      "Perfect",
+      "PredFocus",
+      "SubjFocus",
+      "Subordinate",
+      "Ventive_Immediate"
+    ],
+    "polarity": [
+      "Affirmative",
+      "Negative"
+    ],
+    "tam": [
+      "Past",
+      "Present",
+      "Prohibitive"
+    ],
+    "sentFunction": [
+      "backgrounding",
+      "insisting",
+      "negation",
+      "questionY-N",
+      "subordination"
+    ],
+    "clauseTypeSel": [
+      "ConsecutiveSel",
+      "NonConsecutiveSel"
+    ],
+    "gender": [
+      "Common",
+      "Fem",
+      "Masc",
+      "Neut"
+    ]
+  },
+  "lexemes": {
+    "doosl": {
+      "lemma": "",
+      "gloss": "cultivate"
+    },
+    "hhe7ees": {
+      "lemma": "",
+      "gloss": "finish"
+    },
+    "ibiit": {
+      "lemma": "",
+      "gloss": "sit, live"
+    },
+    "kitahh": {
+      "lemma": "",
+      "gloss": "drink"
+    },
+    "slaw": {
+      "lemma": "",
+      "gloss": "get, meet"
+    },
+    "waar": {
+      "lemma": "",
+      "gloss": "be present, come"
+    },
+    "xaw": {
+      "lemma": "",
+      "gloss": "come"
+    }
+  },
+  "termclusters": [
+{
+"label": "alagwa-V-conj1-pres-aff",
+"note": "MOt6.1 ",
+"common": {"conjClass": "C1",
+ "derv": "Imperfective",
+ "lexeme": "kitahh",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a kitahham"],
+ ["Singular", "Person2", "Common", "a kitahhant"],
+ ["Singular", "Person3", "Masc", "i kitahhan"],
+ ["Singular", "Person3", "Fem", "i kitahhant"],
+ ["Plural", "Person1", "Common", "a kitahhaman"],
+ ["Plural", "Person2", "Common", "a kitahhamtaa'"],
+ ["Plural", "Person3", "Common", "a kitahhamaa;"]]
+},
+{
+"label": "alagwa-V-conj1-pres-neg",
+"note": "MOt6.1 ",
+"common": {"conjClass": "C1",
+ "derv": "Imperfective",
+ "lexeme": "kitahh",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a kitahham-áabasl"],
+ ["Singular", "Person2", "Common", "a kitahhant-áabasl"],
+ ["Singular", "Person3", "Masc", "i kitahhan-áabasl"],
+ ["Singular", "Person3", "Fem", "i kitahhant-áabasl"],
+ ["Plural", "Person1", "Common", "a kitahhaman-áabasl"],
+ ["Plural", "Person2", "Common", "a kitahhamtaa'-áabasl"],
+ ["Plural", "Person3", "Common", "a kitahhamaa;-áabasl"]]
+},
+{
+"label": "alagwa-V-conj1-past-neg",
+"note": "MOt6.2 ",
+"common": {"conjClass": "C1",
+ "derv": "Imperfective",
+ "lexeme": "kitahh",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Past",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "an kitahhám-íibasl"],
+ ["Singular", "Person2", "Common", "an kitahháant-íibasl"],
+ ["Singular", "Person3", "Masc", "in kitahhán-íibasl"],
+ ["Singular", "Person3", "Fem", "in kitahháant-íibasl"],
+ ["Plural", "Person1", "Common", "an kitahháman-íibasl"],
+ ["Plural", "Person2", "Common", "an kitahhántee'-íibasl"],
+ ["Plural", "Person3", "Common", "in kitahhánee'-íibasl"]]
+},
+{
+"label": "alagwa-V-conj2-pres-aff",
+"note": "MOt6.3 ",
+"common": {"conjClass": "C2",
+ "lexeme": "xaw",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a xaw"],
+ ["Singular", "Person2", "Common", "a xawt"],
+ ["Singular", "Person3", "Masc", "i xay"],
+ ["Singular", "Person3", "Fem", "i xawt"],
+ ["Plural", "Person1", "Common", "a xawan"],
+ ["Plural", "Person2", "Common", "a xawtaa'"],
+ ["Plural", "Person3", "Common", "a xayaa'"]]
+},
+{
+"label": "alagwa-V-conj2-pres-neg",
+"note": "MOt6.3 ",
+"common": {"conjClass": "C2",
+ "lexeme": "xaw",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a xaw-áabasl"],
+ ["Singular", "Person2", "Common", "a xawt-áabasl"],
+ ["Singular", "Person3", "Masc", "i xay-áabasl"],
+ ["Singular", "Person3", "Fem", "i xawt-áabasl"],
+ ["Plural", "Person1", "Common", "a xawan-áabasl"],
+ ["Plural", "Person2", "Common", "a xawtaa'-áabasl"],
+ ["Plural", "Person3", "Common", "a xayaa'-áabasl"]]
+},
+{
+"label": "alagwa-V-conj2-past-aff",
+"note": "MOt6.4 ",
+"common": {"conjClass": "C2",
+ "lexeme": "slaw",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "tam": "Past",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "an slaw"],
+ ["Singular", "Person2", "Common", "an slawt"],
+ ["Singular", "Person3", "Masc", "in slay"],
+ ["Singular", "Person3", "Fem", "in slawt"],
+ ["Plural", "Person1", "Common", "an slawan"],
+ ["Plural", "Person2", "Common", "an slawtee'"],
+ ["Plural", "Person3", "Common", "a slayee'"]]
+},
+{
+"label": "alagwa-V-conj2-past-neg",
+"note": "MOt6.4 ",
+"common": {"conjClass": "C2",
+ "lexeme": "slaw",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Past",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "an slaw-íibasl"],
+ ["Singular", "Person2", "Common", "an slawt-íibasl"],
+ ["Singular", "Person3", "Masc", "in slay-íibasl"],
+ ["Singular", "Person3", "Fem", "in slawt-íibasl"],
+ ["Plural", "Person1", "Common", "an slawan-íibasl"],
+ ["Plural", "Person2", "Common", "an slawtee'-íibasl"],
+ ["Plural", "Person3", "Common", "a slayee'-íibasl"]]
+},
+{
+"label": "alacwa-V-conj3-pres-aff",
+"note": "MOt6.5 ",
+"common": {"conjClass": "C3",
+ "lexeme": "waar",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a waar"],
+ ["Singular", "Person2", "Common", "a waant"],
+ ["Singular", "Person3", "Masc", "i wan"],
+ ["Singular", "Person3", "Fem", "i waant"],
+ ["Plural", "Person1", "Common", "a waaran"],
+ ["Plural", "Person2", "Common", "a waartaa'"],
+ ["Plural", "Person3", "Common", "a wanaa."]]
+},
+{
+"label": "alagwa-V-conj3-pres-neg",
+"note": "MOt6.5 ",
+"common": {"conjClass": "C3",
+ "lexeme": "waar",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a waar-áabasl"],
+ ["Singular", "Person2", "Common", "a waant-áabasl"],
+ ["Singular", "Person3", "Masc", "i wan-áabasl"],
+ ["Singular", "Person3", "Fem", "i waant-áabasl"],
+ ["Plural", "Person1", "Common", "a waaran-áabasl"],
+ ["Plural", "Person2", "Common", "a waartaa'-áabasl"],
+ ["Plural", "Person3", "Common", "a wanaa'-áabasl"]]
+},
+{
+"label": "alagwa-V-conj3-past-aff",
+"note": "MOt6.6 ",
+"common": {"conjClass": "C3",
+ "lexeme": "waar",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "tam": "Past",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "an waar"],
+ ["Singular", "Person2", "Common", "an waant"],
+ ["Singular", "Person3", "Masc", "in wan"],
+ ["Singular", "Person3", "Fem", "in waant"],
+ ["Plural", "Person1", "Common", "an waaran"],
+ ["Plural", "Person2", "Common", "an waartee'"],
+ ["Plural", "Person3", "Common", "in wanee'"]]
+},
+{
+"label": "alagwa-V-conj3-past-neg",
+"note": "MOt6.6 ",
+"common": {"conjClass": "C3",
+ "lexeme": "waar",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Past",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "an waar-íibasl"],
+ ["Singular", "Person2", "Common", "an waant-íibasl"],
+ ["Singular", "Person3", "Masc", "in wan-íibasl"],
+ ["Singular", "Person3", "Fem", "in waant-íibasl"],
+ ["Plural", "Person1", "Common", "an waaran-íibasl"],
+ ["Plural", "Person2", "Common", "an waartee'-íibasl"],
+ ["Plural", "Person3", "Common", "in wanee'-íibasl"]]
+},
+{
+"label": "alagwa-V-conj4-pres-aff",
+"note": "MOt6.7 ",
+"common": {"conjClass": "C4",
+ "lexeme": "ibiit",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a ibiit"],
+ ["Singular", "Person2", "Common", "a ibit"],
+ ["Singular", "Person3", "Masc", "i ibiiti"],
+ ["Singular", "Person3", "Fem", "i ibit"],
+ ["Plural", "Person1", "Common", "a ibiitan"],
+ ["Plural", "Person2", "Common", "a ibitaa'"],
+ ["Plural", "Person3", "Common", "a ibiitiya'"]]
+},
+{
+"label": "alagwa-V-conj4-pres-neg",
+"note": "MOt6.7 ",
+"common": {"conjClass": "C4",
+ "lexeme": "ibiit",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Present",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "a ibiit-áabasl"],
+ ["Singular", "Person2", "Common", "a ibit-áabasl"],
+ ["Singular", "Person3", "Masc", "i ibiiti-áabasl"],
+ ["Singular", "Person3", "Fem", "i ibit-áabasl"],
+ ["Plural", "Person1", "Common", "a ibiitan-áabasl"],
+ ["Plural", "Person2", "Common", "a ibitaa'-áabasl"],
+ ["Plural", "Person3", "Common", "a ibiitiya'-áabasl"]]
+},
+{
+"label": "alagwa-V-conj4-past-aff",
+"note": "MOt6.8 ",
+"common": {"conjClass": "C4",
+ "lexeme": "hhe7ees",
+ "polarity": "Affirmative",
+ "pos": "Verb",
+ "tam": "Past",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "an hhe'ees "],
+ ["Singular", "Person2", "Common", "an hhe'eesit "],
+ ["Singular", "Person3", "Masc", "an hhe'ees "],
+ ["Singular", "Person3", "Fem", "an hhe'eesit "],
+ ["Plural", "Person1", "Common", "an hhe'eesan "],
+ ["Plural", "Person2", "Common", "an hhe'eesitee' "],
+ ["Plural", "Person3", "Common", "an hhe'eesir "]]
+},
+{
+"label": "alagwa-V-conj4-past-neg",
+"note": "MOt6.8 ",
+"common": {"conjClass": "C4",
+ "lexeme": "hhe7ees",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Past",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "an hhe'ees-íibasl"],
+ ["Singular", "Person2", "Common", "an hhe'eesit-íibasl"],
+ ["Singular", "Person3", "Masc", "an hhe'ees-íibasl"],
+ ["Singular", "Person3", "Fem", "an hhe'eesit-íibasl"],
+ ["Plural", "Person1", "Common", "an hhe'eesan-íibasl"],
+ ["Plural", "Person2", "Common", "an hhe'eesitee'-íibasl"],
+ ["Plural", "Person3", "Common", "an hhe'eesir-íibasl"]]
+},
+{
+"label": "alagwa-V-prohibitive",
+"note": "MOt6.11 ",
+"common": {"conjClass": "C4",
+ "lexeme": "doosl",
+ "polarity": "Negative",
+ "pos": "Verb",
+ "tam": "Prohibitive",
+ "vmorphClass": "Finite"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "maaree' doosl- u-basl"],
+ ["Singular", "Person2", "Common", "maaree' doosl- iti-basl"],
+ ["Singular", "Person3", "Masc", "maaree' doosl- i-basl"],
+ ["Singular", "Person3", "Fem", "maaree' doosl- iti-basl"],
+ ["Plural", "Person1", "Common", "maaree' doosl- an-basl"],
+ ["Plural", "Person2", "Common", "maaree' doosl- it-ee'-basl"],
+ ["Plural", "Person3", "Common", "maaree' doosl- iy-ee'-basl"]]
+},
+{
+"label": "alagwa-V-SubjMarkers",
+"note": "MOt6.9 :: Suff are past or present except where noted. ",
+"common": {"pos": "Verb",
+ "vmorphClass": "Affix_SubjMark"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "- "],
+ ["Singular", "Person2", "Common", "-it"],
+ ["Singular", "Person3", "Masc", "-i (Past) ~-a (Pres)"],
+ ["Singular", "Person3", "Fem", "-it"],
+ ["Plural", "Person1", "Common", "-an"],
+ ["Plural", "Person2", "Common", "-it-aa'"],
+ ["Plural", "Person3", "Common", "-i-aa' ~-ri (Past only)"]]
+},
+{
+"label": "alagwa-V-SententialSuff",
+"note": "MOt6.12",
+"common": {"pos": "Verb",
+ "vmorphClass": "SententialSuffix"},
+"terms":  
+[["sentFunction", "token"],
+ ["subordination", "lengthing of final vowel"],
+ ["backgrounding", "(-(i)ya +) extra rise and fall"],
+ ["insisting", "-iyee + extra rise"],
+ ["negation", "(ba)sl"],
+ ["questionY-N", "extra higher rise plus fall"]]
+},
+{
+"label": "alagwa-V-ImptvSuff",
+"note": "MOt6.13",
+"common": {"pos": "Verb",
+ "vmorphClass": "ImptvSuffix"},
+"terms":  
+[["imptvFunction", "token"],
+ ["ventive", "-a"],
+ ["pluralAddressee", "-ee'"],
+ ["object", "-eenk"],
+ ["object_pluralAddressee", "-ak"],
+ ["ventive_object", "-ank"],
+ ["ventive_pluralAddressee", "-ar-ee'"],
+ ["ventive_obejct_pluralAddressee", "-aar-aak-inn"]]
+},
+{
+"label": "alagwa-VSel-basic",
+"note": "MOt7.1",
+"common": {"clauseTypeSel": "NonConsecutiveSel",
+ "pos": "Verb",
+ "vmorphClass": "BasicSel"},
+"terms":  
+[["selCase", "number", "person", "gender", "token"],
+ ["SubjSel", "NA", "Person1", "Common", "a"],
+ ["SubjSel", "NA", "Person2", "Common", "a"],
+ ["SubjSel", "NA", "Person3", "Common", "i"],
+ ["ObjSel", "Singular", "Person1", "Fem", "i"],
+ ["ObjSel", "Singular", "Person1", "Masc", "i"],
+ ["ObjSel", "Singular", "Person2", "Fem", "i"],
+ ["ObjSel", "Singular", "Person2", "Masc", "oo"],
+ ["ObjSel", "Singular", "Person3", "Fem", "a"],
+ ["ObjSel", "Singular", "Person3", "Masc", "oo"],
+ ["ObjSel", "Plural", "Person1", "Common", "kunu"],
+ ["ObjSel", "Plural", "Person2", "Common", "kunu"],
+ ["ObjSel", "Plural", "Person3", "Common", "i"],
+ ["ObjSel", "Plural", "PersonRecip", "Common", "kunu"]]
+},
+{
+"label": "alagwa-VSel-basic",
+"note": "MOt7.2",
+"common": {"clauseTypeSel": "ConsecutiveSel",
+ "pos": "Verb",
+ "vmorphClass": "BasicSel"},
+"terms":  
+[["selCase", "number", "person", "gender", "token"],
+ ["SubjSel", "NA", "Person1", "Common", "nanga"],
+ ["SubjSel", "NA", "Person2", "Common", "nanga"],
+ ["SubjSel", "NA", "Person3", "Common", "ningi"],
+ ["ObjSel", "Singular", "Person1", "Fem", "ningi"],
+ ["ObjSel", "Singular", "Person1", "Masc", "ningi"],
+ ["ObjSel", "Singular", "Person2", "Fem", "ningi"],
+ ["ObjSel", "Singular", "Person2", "Masc", "nongo"],
+ ["ObjSel", "Singular", "Person3", "Fem", "nanga"],
+ ["ObjSel", "Singular", "Person3", "Masc", "nongo"],
+ ["ObjSel", "Plural", "Person1", "Common", "nungu"],
+ ["ObjSel", "Plural", "Person2", "Common", "nungu"],
+ ["ObjSel", "Plural", "Person3", "Common", "ningi"],
+ ["ObjSel", "Plural", "PersonRecip", "Common", "nungu"]]
+},
+{
+"label": "alagwa-VSel-prefixes",
+"note": "MOt7.4 :: Cooccurrence order: l/n-s-k-BASIC-SUFFIX-CLITIC",
+"common": {"pos": "Verb",
+ "vmorphClass": "SelPrefixes"},
+"terms":  
+[["selFunction", "token"],
+ ["Optative", "l-"],
+ ["Consec_Optative", "n-"],
+ ["Ventive_Immediate", "n-"],
+ ["SubjFocus", "na-"],
+ ["Beneficient", "s-"],
+ ["Subordinate", "k-"],
+ ["ImpersSubj", "k-"],
+ ["ImpersSubjObjRel", "ti-"]]
+},
+{
+"label": "alagwa-VSel-prefixes-Exx",
+"note": "MOt7.5&8",
+"common": {"pos": "Verb",
+ "vmorphClass": "SelPrefixesExx"},
+"terms":  
+[["selSequence", "token"],
+ ["BEN_OM", "soo < s-oo"],
+ ["BEN_O1SG", "si < s-i"],
+ ["BEN_OM_PF", "sono < s-oo-nV"],
+ ["BEN_IPS_O1SG_PF", "sikini < s-k-i-nV"],
+ ["BEN_IPS_OM_PAST", "sokwaa < s-k-oo-aa"],
+ ["BEN_IPS_OF", "saka < s-k-a"],
+ ["BEN_IPS_OM_PF", "sokono < s-k-oo-nV"],
+ ["BEN_IPS_O1PL", "sukunu < s-kunu"],
+ ["BEN_IPS_O2SGF", "siki < s-k-i"],
+ ["IPS_BEN_SUB_O2F_PF", "ti-si-k-i-ni"],
+ ["IPS_BEN_SUB_02M_PF", "to-soo-k-o-no"],
+ ["IPS_BEN_SUB_O1PL_PF", "tu-su-kunu"]]
+},
+{
+"label": "alagwa-VSel-suffixes",
+"note": "MOt7.6",
+"common": {"pos": "Verb",
+ "vmorphClass": "SelSuffix"},
+"terms":  
+[["selFunction", "token"], ["PastGeneral", "-áa"], ["Ablative", "-aa"], ["Perfect", "-n(V)"], ["PredFocus", "-n"]]
+},
+{
+"label": "alagwa-VSel-clitics",
+"note": "MOt7.7",
+"common": {"pos": "Verb",
+ "vmorphClass": "SelClitic"},
+"terms":  
+[["selFunction", "token"], ["Applicative", "-ee"], ["Innstrumental", "-ra"]]
+},
+{
+"label": "alagwa-pro-dem",
+"note": "MOt3.2&3 :: Token-note: haree 'woman', hiru 'man', hira 'men'",
+"common": {"person": "Person3",
+ "pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "Demonstrative"},
+"terms":  
+[["gender", "degree", "token", "token-note"],
+ ["Fem", "D1", "-ti", "haréeti"],
+ ["Fem", "D2", "-is", "harées"],
+ ["Fem", "D3", "-r-oo-q", "hareeróq"],
+ ["Fem", "D4", "-r-oo-!d", "hareeród"],
+ ["Masc", "D1", "-k", "hirúk"],
+ ["Masc", "D2", "is", "hirús"],
+ ["Masc", "D3", "-w-oo-q", "hiruwóoq"],
+ ["Masc", "D4", "-w-oo-!d", "hiruwód"],
+ ["Neut", "D1", "-wa-k", "hirawák"],
+ ["Neut", "D2", "-wa-is", "hirawás"],
+ ["Neut", "D3", "-wa-q", "hirawáq"],
+ ["Neut", "D4", "-wa-!d", "hirawád"]]
+},
+{
+"label": "alagwa-pro-dem-ind",
+"note": "MOt3.4",
+"common": {"person": "Person3",
+ "pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "DemonstrativeInd"},
+"terms":  
+[["gender", "degree", "token"],
+ ["Fem", "D1", "héet"],
+ ["Fem", "D2", "tóos"],
+ ["Fem", "D3", "tóoq"],
+ ["Fem", "D4", "tód"],
+ ["Masc", "D1", "héek"],
+ ["Masc", "D2", "kóos"],
+ ["Masc", "D3", "kóoq"],
+ ["Masc", "D4", "kód"],
+ ["Neut", "D1", "kwáak"],
+ ["Neut", "D2", "kwáas"],
+ ["Neut", "D3", "kwáaq"],
+ ["Neut", "D4", "kwád"]]
+},
+{
+"label": "alagwa-pro-dem-loc",
+"note": "MOt3.5",
+"common": {"person": "Person3",
+ "pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "DemonstrativeLoc"},
+"terms":  
+[["case", "degree", "token"],
+ ["Locative", "D1", "ta"],
+ ["Locative", "D2", "tays"],
+ ["Locative", "D3", "haqa"],
+ ["Locative", "D4", "hada"],
+ ["Allative", "D1", "tí"],
+ ["Allative", "D2", "taysí"],
+ ["Allative", "D3", "haqí"],
+ ["Allative", "D4", "hadí"],
+ ["Ablative", "D1", "taa"],
+ ["Ablative", "D2", "taysaa"],
+ ["Ablative", "D3", "haqaa"],
+ ["Ablative", "D4", "hadaa"]]
+},
+{
+"label": "alagwa-pro-poss-suff",
+"note": "MOt3.6&7 :: Token-note: slee 'cow', do'o 'house', ma'ay 'water'",
+"common": {"pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "PossSuff"},
+"terms":  
+[["genHead", "number", "person", "token", "token-note"],
+ ["Fem", "Singular", "Person1", "-r-i", "sleerí"],
+ ["Fem", "Singular", "Person2", "-r-oo-gu", "sleeróogu"],
+ ["Fem", "Singular", "Person3", "-r-oo-!s", "sleerós"],
+ ["Fem", "Plural", "Person1", "-r-oo-r", "sleeróor"],
+ ["Fem", "Plural", "Person2", "-r-oo-kin", "sleeróokin"],
+ ["Fem", "Plural", "Person3", "r-oo-'in", "sleeróo'in"],
+ ["Masc", "Singular", "Person1", "-w-i ", "do'owí"],
+ ["Masc", "Singular", "Person2", "-w-oo-gu", "do'óogu"],
+ ["Masc", "Singular", "Person3", "-w-oo-!s", "do'ós"],
+ ["Masc", "Plural", "Person1", "-w-oo-r", "do'óor"],
+ ["Masc", "Plural", "Person2", "-w-oo-kin", "do'óokin"],
+ ["Masc", "Plural", "Person3", "-w-oo-'in", "do'óo'in"],
+ ["Neut", "Singular", "Person1", "-wa-i ", "ma'aywí"],
+ ["Neut", "Singular", "Person2", "-wa-gu", "ma'aywágu"],
+ ["Neut", "Singular", "Person3", "-wa-!s", "ma'aywás"],
+ ["Neut", "Plural", "Person1", "-wa-tin", "ma'aywátin"],
+ ["Neut", "Plural", "Person2", "-wa-kin", "ma'aywákin"],
+ ["Neut", "Plural", "Person3", "-wa-'in", "ma'aywá'in"]]
+},
+{
+"label": "alagwa-pro-poss-ind",
+"note": "MOt3.8",
+"common": {"pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "PossInd"},
+"terms":  
+[["genHead", "number", "person", "token"],
+ ["Fem", "Singular", "Person1", "tóo'"],
+ ["Fem", "Singular", "Person2", "tóog"],
+ ["Fem", "Singular", "Person3", "tóos"],
+ ["Fem", "Plural", "Person1", "tóor"],
+ ["Fem", "Plural", "Person2", "tóokin"],
+ ["Fem", "Plural", "Person3", "tóo'in"],
+ ["Masc", "Singular", "Person1", "kóo'"],
+ ["Masc", "Singular", "Person2", "kóog"],
+ ["Masc", "Singular", "Person3", "kóos"],
+ ["Masc", "Plural", "Person1", "kóor"],
+ ["Masc", "Plural", "Person2", "kóokin"],
+ ["Masc", "Plural", "Person3", "kóo'in"],
+ ["Neut", "Singular", "Person1", "kwá'"],
+ ["Neut", "Singular", "Person2", "kwág"],
+ ["Neut", "Singular", "Person3", "kwás"],
+ ["Neut", "Plural", "Person1", "kwátin"],
+ ["Neut", "Plural", "Person2", "kwákin"],
+ ["Neut", "Plural", "Person3", "kwá'in"]]
+},
+{
+"label": "alagwa-dir-suff",
+"note": "MOt3.9",
+"common": {"pos": "Noun", "proClass": "DirSuff"},
+"terms":  
+[["case", "formClass", "token"],
+ ["Allative", "Long", "-li"],
+ ["Allative", "Long", "-i"],
+ ["Ablative", "Short", "-ka"],
+ ["Ablative", "Short", "-a"]]
+},
+{
+"label": "alagwa-pro-anaphoric",
+"note": "MOt3.11",
+"common": {"pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "Anaphoric"},
+"terms":  
+[["gender", "token"], ["Fem", "tá"], ["Masc", "kó"], ["Neut", "kó"]]
+},
+{
+"label": "alagwa-pro-ind",
+"note": "MOt3.12",
+"common": {"pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "Independent"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "ána"],
+ ["Singular", "Person2", "Fem", "kíi"],
+ ["Singular", "Person2", "Masc", "kúu"],
+ ["Singular", "Person3", "Common", "ín"],
+ ["Plural", "Person1", "Common", "handá ~ andá"],
+ ["Plural", "Person2", "Common", "hunguráa ~ kunguráa"],
+ ["Plural", "Person3", "Common", "iná"]]
+}]
+}

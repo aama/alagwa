@@ -1,25 +1,24 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data/alagwa/alagwa-pdgms.edn
+#data/alagwa-pdgms.json
 
-@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc:    <http://purl.org/dc/elements>.
-@prefix dcterms:    <http://purl.org/dc/terms>.
-@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix aama:    <http://id.oi.uchicago.edu/aama/2013/> .
 @prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
-@prefix alg:   <http://id.oi.uchicago.edu/aama/2013/alagwa/> .
+@prefix alg:     <http://id.oi.uchicago.edu/aama/2013/alagwa/> .
 
 #LANG INFO:
 
-aama:Alagwa a aamas:Language .
+aama:Alagwa a aamas:Language.
 aama:Alagwa rdfs:label "Alagwa" .
 aama:Alagwa aamas:subfamily "SCushitic" .
 aama:Alagwa aamas:lpref "alg" .
-aama:Alagwa aamas:dataSource "Mous2016' abbrev. in :note as 'MOt[N]' for 'Mous2016 Table N' " .
-aama:Alagwa aamas:dataSourceNotes "" .
+aama:Alagwa aamas:dataSource "Mous2016ZZ abbrev. in :note as ZZMOt[N]ZZ for ZZMous2016 Table NZZ " .
 aama:Alagwa aamas:geodemoURL "http://www.ethnologue.com/language/wbj" .
-aama:Alagwa aamas:geodemoTXT "Tanzania%% Dodoma region: Kondoa district. Approximately 30%%000 speakers." .
-
+aama:Alagwa aamas:geodemoTxt "Tanzania, Dodoma region: Kondoa district. Approximately 30,000 speakers." .
 
 #SCHEMATA: person
 alg:person aamas:lang aama:Alagwa .
@@ -31,16 +30,16 @@ alg:person rdfs:range alg:Person .
 alg:Person rdfs:subClassOf alg:MuExponent .
 alg:person rdfs:subPropertyOf alg:muProperty .
 alg:Person1 aamas:lang aama:Alagwa .
-alg:Person1 rdf:type alg:Person .
+alg:Person1 rdf:type aamas:Person .
 alg:Person1 rdfs:label "Person1" .
 alg:Person2 aamas:lang aama:Alagwa .
-alg:Person2 rdf:type alg:Person .
+alg:Person2 rdf:type aamas:Person .
 alg:Person2 rdfs:label "Person2" .
 alg:Person3 aamas:lang aama:Alagwa .
-alg:Person3 rdf:type alg:Person .
+alg:Person3 rdf:type aamas:Person .
 alg:Person3 rdfs:label "Person3" .
 alg:PersonRecip aamas:lang aama:Alagwa .
-alg:PersonRecip rdf:type alg:Person .
+alg:PersonRecip rdf:type aamas:Person .
 alg:PersonRecip rdfs:label "PersonRecip" .
 
 #SCHEMATA: selCase
@@ -53,10 +52,10 @@ alg:selCase rdfs:range alg:Selcase .
 alg:Selcase rdfs:subClassOf alg:MuExponent .
 alg:selCase rdfs:subPropertyOf alg:muProperty .
 alg:ObjSel aamas:lang aama:Alagwa .
-alg:ObjSel rdf:type alg:Selcase .
+alg:ObjSel rdf:type aamas:Selcase .
 alg:ObjSel rdfs:label "ObjSel" .
 alg:SubjSel aamas:lang aama:Alagwa .
-alg:SubjSel rdf:type alg:Selcase .
+alg:SubjSel rdf:type aamas:Selcase .
 alg:SubjSel rdfs:label "SubjSel" .
 
 #SCHEMATA: number
@@ -69,13 +68,13 @@ alg:number rdfs:range alg:Number .
 alg:Number rdfs:subClassOf alg:MuExponent .
 alg:number rdfs:subPropertyOf alg:muProperty .
 alg:NA aamas:lang aama:Alagwa .
-alg:NA rdf:type alg:Number .
+alg:NA rdf:type aamas:Number .
 alg:NA rdfs:label "NA" .
 alg:Plural aamas:lang aama:Alagwa .
-alg:Plural rdf:type alg:Number .
+alg:Plural rdf:type aamas:Number .
 alg:Plural rdfs:label "Plural" .
 alg:Singular aamas:lang aama:Alagwa .
-alg:Singular rdf:type alg:Number .
+alg:Singular rdf:type aamas:Number .
 alg:Singular rdfs:label "Singular" .
 
 #SCHEMATA: vmorphClass
@@ -88,31 +87,31 @@ alg:vmorphClass rdfs:range alg:Vmorphclass .
 alg:Vmorphclass rdfs:subClassOf alg:MuExponent .
 alg:vmorphClass rdfs:subPropertyOf alg:muProperty .
 alg:Affix_SubjMark aamas:lang aama:Alagwa .
-alg:Affix_SubjMark rdf:type alg:Vmorphclass .
+alg:Affix_SubjMark rdf:type aamas:Vmorphclass .
 alg:Affix_SubjMark rdfs:label "Affix_SubjMark" .
 alg:BasicSel aamas:lang aama:Alagwa .
-alg:BasicSel rdf:type alg:Vmorphclass .
+alg:BasicSel rdf:type aamas:Vmorphclass .
 alg:BasicSel rdfs:label "BasicSel" .
 alg:Finite aamas:lang aama:Alagwa .
-alg:Finite rdf:type alg:Vmorphclass .
+alg:Finite rdf:type aamas:Vmorphclass .
 alg:Finite rdfs:label "Finite" .
 alg:ImptvSuffix aamas:lang aama:Alagwa .
-alg:ImptvSuffix rdf:type alg:Vmorphclass .
+alg:ImptvSuffix rdf:type aamas:Vmorphclass .
 alg:ImptvSuffix rdfs:label "ImptvSuffix" .
 alg:SelClitic aamas:lang aama:Alagwa .
-alg:SelClitic rdf:type alg:Vmorphclass .
+alg:SelClitic rdf:type aamas:Vmorphclass .
 alg:SelClitic rdfs:label "SelClitic" .
 alg:SelPrefixes aamas:lang aama:Alagwa .
-alg:SelPrefixes rdf:type alg:Vmorphclass .
+alg:SelPrefixes rdf:type aamas:Vmorphclass .
 alg:SelPrefixes rdfs:label "SelPrefixes" .
 alg:SelPrefixesExx aamas:lang aama:Alagwa .
-alg:SelPrefixesExx rdf:type alg:Vmorphclass .
+alg:SelPrefixesExx rdf:type aamas:Vmorphclass .
 alg:SelPrefixesExx rdfs:label "SelPrefixesExx" .
 alg:SelSuffix aamas:lang aama:Alagwa .
-alg:SelSuffix rdf:type alg:Vmorphclass .
+alg:SelSuffix rdf:type aamas:Vmorphclass .
 alg:SelSuffix rdfs:label "SelSuffix" .
 alg:SententialSuffix aamas:lang aama:Alagwa .
-alg:SententialSuffix rdf:type alg:Vmorphclass .
+alg:SententialSuffix rdf:type aamas:Vmorphclass .
 alg:SententialSuffix rdfs:label "SententialSuffix" .
 
 #SCHEMATA: formClass
@@ -125,10 +124,10 @@ alg:formClass rdfs:range alg:Formclass .
 alg:Formclass rdfs:subClassOf alg:MuExponent .
 alg:formClass rdfs:subPropertyOf alg:muProperty .
 alg:Long aamas:lang aama:Alagwa .
-alg:Long rdf:type alg:Formclass .
+alg:Long rdf:type aamas:Formclass .
 alg:Long rdfs:label "Long" .
 alg:Short aamas:lang aama:Alagwa .
-alg:Short rdf:type alg:Formclass .
+alg:Short rdf:type aamas:Formclass .
 alg:Short rdfs:label "Short" .
 
 #SCHEMATA: genHead
@@ -141,13 +140,13 @@ alg:genHead rdfs:range alg:Genhead .
 alg:Genhead rdfs:subClassOf alg:MuExponent .
 alg:genHead rdfs:subPropertyOf alg:muProperty .
 alg:Fem aamas:lang aama:Alagwa .
-alg:Fem rdf:type alg:Genhead .
+alg:Fem rdf:type aamas:Genhead .
 alg:Fem rdfs:label "Fem" .
 alg:Masc aamas:lang aama:Alagwa .
-alg:Masc rdf:type alg:Genhead .
+alg:Masc rdf:type aamas:Genhead .
 alg:Masc rdfs:label "Masc" .
 alg:Neut aamas:lang aama:Alagwa .
-alg:Neut rdf:type alg:Genhead .
+alg:Neut rdf:type aamas:Genhead .
 alg:Neut rdfs:label "Neut" .
 
 #SCHEMATA: pos
@@ -160,13 +159,13 @@ alg:pos rdfs:range alg:Pos .
 alg:Pos rdfs:subClassOf alg:MuExponent .
 alg:pos rdfs:subPropertyOf alg:muProperty .
 alg:Noun aamas:lang aama:Alagwa .
-alg:Noun rdf:type alg:Pos .
+alg:Noun rdf:type aamas:Pos .
 alg:Noun rdfs:label "Noun" .
 alg:Pronoun aamas:lang aama:Alagwa .
-alg:Pronoun rdf:type alg:Pos .
+alg:Pronoun rdf:type aamas:Pos .
 alg:Pronoun rdfs:label "Pronoun" .
 alg:Verb aamas:lang aama:Alagwa .
-alg:Verb rdf:type alg:Pos .
+alg:Verb rdf:type aamas:Pos .
 alg:Verb rdfs:label "Verb" .
 
 #SCHEMATA: derv
@@ -179,7 +178,7 @@ alg:derv rdfs:range alg:Derv .
 alg:Derv rdfs:subClassOf alg:MuExponent .
 alg:derv rdfs:subPropertyOf alg:muProperty .
 alg:Imperfective aamas:lang aama:Alagwa .
-alg:Imperfective rdf:type alg:Derv .
+alg:Imperfective rdf:type aamas:Derv .
 alg:Imperfective rdfs:label "Imperfective" .
 
 #SCHEMATA: proClass
@@ -192,28 +191,28 @@ alg:proClass rdfs:range alg:Proclass .
 alg:Proclass rdfs:subClassOf alg:MuExponent .
 alg:proClass rdfs:subPropertyOf alg:muProperty .
 alg:Anaphoric aamas:lang aama:Alagwa .
-alg:Anaphoric rdf:type alg:Proclass .
+alg:Anaphoric rdf:type aamas:Proclass .
 alg:Anaphoric rdfs:label "Anaphoric" .
 alg:Demonstrative aamas:lang aama:Alagwa .
-alg:Demonstrative rdf:type alg:Proclass .
+alg:Demonstrative rdf:type aamas:Proclass .
 alg:Demonstrative rdfs:label "Demonstrative" .
 alg:DemonstrativeInd aamas:lang aama:Alagwa .
-alg:DemonstrativeInd rdf:type alg:Proclass .
+alg:DemonstrativeInd rdf:type aamas:Proclass .
 alg:DemonstrativeInd rdfs:label "DemonstrativeInd" .
 alg:DemonstrativeLoc aamas:lang aama:Alagwa .
-alg:DemonstrativeLoc rdf:type alg:Proclass .
+alg:DemonstrativeLoc rdf:type aamas:Proclass .
 alg:DemonstrativeLoc rdfs:label "DemonstrativeLoc" .
 alg:DirSuff aamas:lang aama:Alagwa .
-alg:DirSuff rdf:type alg:Proclass .
+alg:DirSuff rdf:type aamas:Proclass .
 alg:DirSuff rdfs:label "DirSuff" .
 alg:Independent aamas:lang aama:Alagwa .
-alg:Independent rdf:type alg:Proclass .
+alg:Independent rdf:type aamas:Proclass .
 alg:Independent rdfs:label "Independent" .
 alg:PossInd aamas:lang aama:Alagwa .
-alg:PossInd rdf:type alg:Proclass .
+alg:PossInd rdf:type aamas:Proclass .
 alg:PossInd rdfs:label "PossInd" .
 alg:PossSuff aamas:lang aama:Alagwa .
-alg:PossSuff rdf:type alg:Proclass .
+alg:PossSuff rdf:type aamas:Proclass .
 alg:PossSuff rdfs:label "PossSuff" .
 
 #SCHEMATA: lexeme
@@ -226,25 +225,25 @@ alg:lexeme rdfs:range alg:Lexeme .
 alg:Lexeme rdfs:subClassOf alg:MuExponent .
 alg:lexeme rdfs:subPropertyOf alg:muProperty .
 alg:doosl aamas:lang aama:Alagwa .
-alg:doosl rdf:type alg:Lexeme .
+alg:doosl rdf:type aamas:Lexeme .
 alg:doosl rdfs:label "doosl" .
 alg:hhe7ees aamas:lang aama:Alagwa .
-alg:hhe7ees rdf:type alg:Lexeme .
+alg:hhe7ees rdf:type aamas:Lexeme .
 alg:hhe7ees rdfs:label "hhe7ees" .
 alg:ibiit aamas:lang aama:Alagwa .
-alg:ibiit rdf:type alg:Lexeme .
+alg:ibiit rdf:type aamas:Lexeme .
 alg:ibiit rdfs:label "ibiit" .
 alg:kitahh aamas:lang aama:Alagwa .
-alg:kitahh rdf:type alg:Lexeme .
+alg:kitahh rdf:type aamas:Lexeme .
 alg:kitahh rdfs:label "kitahh" .
 alg:slaw aamas:lang aama:Alagwa .
-alg:slaw rdf:type alg:Lexeme .
+alg:slaw rdf:type aamas:Lexeme .
 alg:slaw rdfs:label "slaw" .
 alg:waar aamas:lang aama:Alagwa .
-alg:waar rdf:type alg:Lexeme .
+alg:waar rdf:type aamas:Lexeme .
 alg:waar rdfs:label "waar" .
 alg:xaw aamas:lang aama:Alagwa .
-alg:xaw rdf:type alg:Lexeme .
+alg:xaw rdf:type aamas:Lexeme .
 alg:xaw rdfs:label "xaw" .
 
 #SCHEMATA: selSequence
@@ -257,40 +256,40 @@ alg:selSequence rdfs:range alg:Selsequence .
 alg:Selsequence rdfs:subClassOf alg:MuExponent .
 alg:selSequence rdfs:subPropertyOf alg:muProperty .
 alg:BEN_IPS_O1PL aamas:lang aama:Alagwa .
-alg:BEN_IPS_O1PL rdf:type alg:Selsequence .
+alg:BEN_IPS_O1PL rdf:type aamas:Selsequence .
 alg:BEN_IPS_O1PL rdfs:label "BEN_IPS_O1PL" .
 alg:BEN_IPS_O1SG_PF aamas:lang aama:Alagwa .
-alg:BEN_IPS_O1SG_PF rdf:type alg:Selsequence .
+alg:BEN_IPS_O1SG_PF rdf:type aamas:Selsequence .
 alg:BEN_IPS_O1SG_PF rdfs:label "BEN_IPS_O1SG_PF" .
 alg:BEN_IPS_O2SGF aamas:lang aama:Alagwa .
-alg:BEN_IPS_O2SGF rdf:type alg:Selsequence .
+alg:BEN_IPS_O2SGF rdf:type aamas:Selsequence .
 alg:BEN_IPS_O2SGF rdfs:label "BEN_IPS_O2SGF" .
 alg:BEN_IPS_OF aamas:lang aama:Alagwa .
-alg:BEN_IPS_OF rdf:type alg:Selsequence .
+alg:BEN_IPS_OF rdf:type aamas:Selsequence .
 alg:BEN_IPS_OF rdfs:label "BEN_IPS_OF" .
 alg:BEN_IPS_OM_PAST aamas:lang aama:Alagwa .
-alg:BEN_IPS_OM_PAST rdf:type alg:Selsequence .
+alg:BEN_IPS_OM_PAST rdf:type aamas:Selsequence .
 alg:BEN_IPS_OM_PAST rdfs:label "BEN_IPS_OM_PAST" .
 alg:BEN_IPS_OM_PF aamas:lang aama:Alagwa .
-alg:BEN_IPS_OM_PF rdf:type alg:Selsequence .
+alg:BEN_IPS_OM_PF rdf:type aamas:Selsequence .
 alg:BEN_IPS_OM_PF rdfs:label "BEN_IPS_OM_PF" .
 alg:BEN_O1SG aamas:lang aama:Alagwa .
-alg:BEN_O1SG rdf:type alg:Selsequence .
+alg:BEN_O1SG rdf:type aamas:Selsequence .
 alg:BEN_O1SG rdfs:label "BEN_O1SG" .
 alg:BEN_OM aamas:lang aama:Alagwa .
-alg:BEN_OM rdf:type alg:Selsequence .
+alg:BEN_OM rdf:type aamas:Selsequence .
 alg:BEN_OM rdfs:label "BEN_OM" .
 alg:BEN_OM_PF aamas:lang aama:Alagwa .
-alg:BEN_OM_PF rdf:type alg:Selsequence .
+alg:BEN_OM_PF rdf:type aamas:Selsequence .
 alg:BEN_OM_PF rdfs:label "BEN_OM_PF" .
 alg:IPS_BEN_SUB_02M_PF aamas:lang aama:Alagwa .
-alg:IPS_BEN_SUB_02M_PF rdf:type alg:Selsequence .
+alg:IPS_BEN_SUB_02M_PF rdf:type aamas:Selsequence .
 alg:IPS_BEN_SUB_02M_PF rdfs:label "IPS_BEN_SUB_02M_PF" .
 alg:IPS_BEN_SUB_O1PL_PF aamas:lang aama:Alagwa .
-alg:IPS_BEN_SUB_O1PL_PF rdf:type alg:Selsequence .
+alg:IPS_BEN_SUB_O1PL_PF rdf:type aamas:Selsequence .
 alg:IPS_BEN_SUB_O1PL_PF rdfs:label "IPS_BEN_SUB_O1PL_PF" .
 alg:IPS_BEN_SUB_O2F_PF aamas:lang aama:Alagwa .
-alg:IPS_BEN_SUB_O2F_PF rdf:type alg:Selsequence .
+alg:IPS_BEN_SUB_O2F_PF rdf:type aamas:Selsequence .
 alg:IPS_BEN_SUB_O2F_PF rdfs:label "IPS_BEN_SUB_O2F_PF" .
 
 #SCHEMATA: conjClass
@@ -303,16 +302,16 @@ alg:conjClass rdfs:range alg:Conjclass .
 alg:Conjclass rdfs:subClassOf alg:MuExponent .
 alg:conjClass rdfs:subPropertyOf alg:muProperty .
 alg:C1 aamas:lang aama:Alagwa .
-alg:C1 rdf:type alg:Conjclass .
+alg:C1 rdf:type aamas:Conjclass .
 alg:C1 rdfs:label "C1" .
 alg:C2 aamas:lang aama:Alagwa .
-alg:C2 rdf:type alg:Conjclass .
+alg:C2 rdf:type aamas:Conjclass .
 alg:C2 rdfs:label "C2" .
 alg:C3 aamas:lang aama:Alagwa .
-alg:C3 rdf:type alg:Conjclass .
+alg:C3 rdf:type aamas:Conjclass .
 alg:C3 rdfs:label "C3" .
 alg:C4 aamas:lang aama:Alagwa .
-alg:C4 rdf:type alg:Conjclass .
+alg:C4 rdf:type aamas:Conjclass .
 alg:C4 rdfs:label "C4" .
 
 #SCHEMATA: pmorphClass
@@ -325,7 +324,7 @@ alg:pmorphClass rdfs:range alg:Pmorphclass .
 alg:Pmorphclass rdfs:subClassOf alg:MuExponent .
 alg:pmorphClass rdfs:subPropertyOf alg:muProperty .
 alg:ProMorph aamas:lang aama:Alagwa .
-alg:ProMorph rdf:type alg:Pmorphclass .
+alg:ProMorph rdf:type aamas:Pmorphclass .
 alg:ProMorph rdfs:label "ProMorph" .
 
 #SCHEMATA: imptvFunction
@@ -338,25 +337,25 @@ alg:imptvFunction rdfs:range alg:Imptvfunction .
 alg:Imptvfunction rdfs:subClassOf alg:MuExponent .
 alg:imptvFunction rdfs:subPropertyOf alg:muProperty .
 alg:object aamas:lang aama:Alagwa .
-alg:object rdf:type alg:Imptvfunction .
+alg:object rdf:type aamas:Imptvfunction .
 alg:object rdfs:label "object" .
 alg:object_pluralAddressee aamas:lang aama:Alagwa .
-alg:object_pluralAddressee rdf:type alg:Imptvfunction .
+alg:object_pluralAddressee rdf:type aamas:Imptvfunction .
 alg:object_pluralAddressee rdfs:label "object_pluralAddressee" .
 alg:pluralAddressee aamas:lang aama:Alagwa .
-alg:pluralAddressee rdf:type alg:Imptvfunction .
+alg:pluralAddressee rdf:type aamas:Imptvfunction .
 alg:pluralAddressee rdfs:label "pluralAddressee" .
 alg:ventive aamas:lang aama:Alagwa .
-alg:ventive rdf:type alg:Imptvfunction .
+alg:ventive rdf:type aamas:Imptvfunction .
 alg:ventive rdfs:label "ventive" .
 alg:ventive_obejct_pluralAddressee aamas:lang aama:Alagwa .
-alg:ventive_obejct_pluralAddressee rdf:type alg:Imptvfunction .
+alg:ventive_obejct_pluralAddressee rdf:type aamas:Imptvfunction .
 alg:ventive_obejct_pluralAddressee rdfs:label "ventive_obejct_pluralAddressee" .
 alg:ventive_object aamas:lang aama:Alagwa .
-alg:ventive_object rdf:type alg:Imptvfunction .
+alg:ventive_object rdf:type aamas:Imptvfunction .
 alg:ventive_object rdfs:label "ventive_object" .
 alg:ventive_pluralAddressee aamas:lang aama:Alagwa .
-alg:ventive_pluralAddressee rdf:type alg:Imptvfunction .
+alg:ventive_pluralAddressee rdf:type aamas:Imptvfunction .
 alg:ventive_pluralAddressee rdfs:label "ventive_pluralAddressee" .
 
 #SCHEMATA: case
@@ -369,13 +368,13 @@ alg:case rdfs:range alg:Case .
 alg:Case rdfs:subClassOf alg:MuExponent .
 alg:case rdfs:subPropertyOf alg:muProperty .
 alg:Ablative aamas:lang aama:Alagwa .
-alg:Ablative rdf:type alg:Case .
+alg:Ablative rdf:type aamas:Case .
 alg:Ablative rdfs:label "Ablative" .
 alg:Allative aamas:lang aama:Alagwa .
-alg:Allative rdf:type alg:Case .
+alg:Allative rdf:type aamas:Case .
 alg:Allative rdfs:label "Allative" .
 alg:Locative aamas:lang aama:Alagwa .
-alg:Locative rdf:type alg:Case .
+alg:Locative rdf:type aamas:Case .
 alg:Locative rdfs:label "Locative" .
 
 #SCHEMATA: degree
@@ -388,16 +387,16 @@ alg:degree rdfs:range alg:Degree .
 alg:Degree rdfs:subClassOf alg:MuExponent .
 alg:degree rdfs:subPropertyOf alg:muProperty .
 alg:D1 aamas:lang aama:Alagwa .
-alg:D1 rdf:type alg:Degree .
+alg:D1 rdf:type aamas:Degree .
 alg:D1 rdfs:label "D1" .
 alg:D2 aamas:lang aama:Alagwa .
-alg:D2 rdf:type alg:Degree .
+alg:D2 rdf:type aamas:Degree .
 alg:D2 rdfs:label "D2" .
 alg:D3 aamas:lang aama:Alagwa .
-alg:D3 rdf:type alg:Degree .
+alg:D3 rdf:type aamas:Degree .
 alg:D3 rdfs:label "D3" .
 alg:D4 aamas:lang aama:Alagwa .
-alg:D4 rdf:type alg:Degree .
+alg:D4 rdf:type aamas:Degree .
 alg:D4 rdfs:label "D4" .
 
 #SCHEMATA: selFunction
@@ -410,46 +409,46 @@ alg:selFunction rdfs:range alg:Selfunction .
 alg:Selfunction rdfs:subClassOf alg:MuExponent .
 alg:selFunction rdfs:subPropertyOf alg:muProperty .
 alg:Ablative aamas:lang aama:Alagwa .
-alg:Ablative rdf:type alg:Selfunction .
+alg:Ablative rdf:type aamas:Selfunction .
 alg:Ablative rdfs:label "Ablative" .
 alg:Applicative aamas:lang aama:Alagwa .
-alg:Applicative rdf:type alg:Selfunction .
+alg:Applicative rdf:type aamas:Selfunction .
 alg:Applicative rdfs:label "Applicative" .
 alg:Beneficient aamas:lang aama:Alagwa .
-alg:Beneficient rdf:type alg:Selfunction .
+alg:Beneficient rdf:type aamas:Selfunction .
 alg:Beneficient rdfs:label "Beneficient" .
 alg:Consec_Optative aamas:lang aama:Alagwa .
-alg:Consec_Optative rdf:type alg:Selfunction .
+alg:Consec_Optative rdf:type aamas:Selfunction .
 alg:Consec_Optative rdfs:label "Consec_Optative" .
 alg:ImpersSubj aamas:lang aama:Alagwa .
-alg:ImpersSubj rdf:type alg:Selfunction .
+alg:ImpersSubj rdf:type aamas:Selfunction .
 alg:ImpersSubj rdfs:label "ImpersSubj" .
 alg:ImpersSubjObjRel aamas:lang aama:Alagwa .
-alg:ImpersSubjObjRel rdf:type alg:Selfunction .
+alg:ImpersSubjObjRel rdf:type aamas:Selfunction .
 alg:ImpersSubjObjRel rdfs:label "ImpersSubjObjRel" .
 alg:Innstrumental aamas:lang aama:Alagwa .
-alg:Innstrumental rdf:type alg:Selfunction .
+alg:Innstrumental rdf:type aamas:Selfunction .
 alg:Innstrumental rdfs:label "Innstrumental" .
 alg:Optative aamas:lang aama:Alagwa .
-alg:Optative rdf:type alg:Selfunction .
+alg:Optative rdf:type aamas:Selfunction .
 alg:Optative rdfs:label "Optative" .
 alg:PastGeneral aamas:lang aama:Alagwa .
-alg:PastGeneral rdf:type alg:Selfunction .
+alg:PastGeneral rdf:type aamas:Selfunction .
 alg:PastGeneral rdfs:label "PastGeneral" .
 alg:Perfect aamas:lang aama:Alagwa .
-alg:Perfect rdf:type alg:Selfunction .
+alg:Perfect rdf:type aamas:Selfunction .
 alg:Perfect rdfs:label "Perfect" .
 alg:PredFocus aamas:lang aama:Alagwa .
-alg:PredFocus rdf:type alg:Selfunction .
+alg:PredFocus rdf:type aamas:Selfunction .
 alg:PredFocus rdfs:label "PredFocus" .
 alg:SubjFocus aamas:lang aama:Alagwa .
-alg:SubjFocus rdf:type alg:Selfunction .
+alg:SubjFocus rdf:type aamas:Selfunction .
 alg:SubjFocus rdfs:label "SubjFocus" .
 alg:Subordinate aamas:lang aama:Alagwa .
-alg:Subordinate rdf:type alg:Selfunction .
+alg:Subordinate rdf:type aamas:Selfunction .
 alg:Subordinate rdfs:label "Subordinate" .
 alg:Ventive_Immediate aamas:lang aama:Alagwa .
-alg:Ventive_Immediate rdf:type alg:Selfunction .
+alg:Ventive_Immediate rdf:type aamas:Selfunction .
 alg:Ventive_Immediate rdfs:label "Ventive_Immediate" .
 
 #SCHEMATA: polarity
@@ -462,10 +461,10 @@ alg:polarity rdfs:range alg:Polarity .
 alg:Polarity rdfs:subClassOf alg:MuExponent .
 alg:polarity rdfs:subPropertyOf alg:muProperty .
 alg:Affirmative aamas:lang aama:Alagwa .
-alg:Affirmative rdf:type alg:Polarity .
+alg:Affirmative rdf:type aamas:Polarity .
 alg:Affirmative rdfs:label "Affirmative" .
 alg:Negative aamas:lang aama:Alagwa .
-alg:Negative rdf:type alg:Polarity .
+alg:Negative rdf:type aamas:Polarity .
 alg:Negative rdfs:label "Negative" .
 
 #SCHEMATA: tam
@@ -478,13 +477,13 @@ alg:tam rdfs:range alg:Tam .
 alg:Tam rdfs:subClassOf alg:MuExponent .
 alg:tam rdfs:subPropertyOf alg:muProperty .
 alg:Past aamas:lang aama:Alagwa .
-alg:Past rdf:type alg:Tam .
+alg:Past rdf:type aamas:Tam .
 alg:Past rdfs:label "Past" .
 alg:Present aamas:lang aama:Alagwa .
-alg:Present rdf:type alg:Tam .
+alg:Present rdf:type aamas:Tam .
 alg:Present rdfs:label "Present" .
 alg:Prohibitive aamas:lang aama:Alagwa .
-alg:Prohibitive rdf:type alg:Tam .
+alg:Prohibitive rdf:type aamas:Tam .
 alg:Prohibitive rdfs:label "Prohibitive" .
 
 #SCHEMATA: sentFunction
@@ -497,19 +496,19 @@ alg:sentFunction rdfs:range alg:Sentfunction .
 alg:Sentfunction rdfs:subClassOf alg:MuExponent .
 alg:sentFunction rdfs:subPropertyOf alg:muProperty .
 alg:backgrounding aamas:lang aama:Alagwa .
-alg:backgrounding rdf:type alg:Sentfunction .
+alg:backgrounding rdf:type aamas:Sentfunction .
 alg:backgrounding rdfs:label "backgrounding" .
 alg:insisting aamas:lang aama:Alagwa .
-alg:insisting rdf:type alg:Sentfunction .
+alg:insisting rdf:type aamas:Sentfunction .
 alg:insisting rdfs:label "insisting" .
 alg:negation aamas:lang aama:Alagwa .
-alg:negation rdf:type alg:Sentfunction .
+alg:negation rdf:type aamas:Sentfunction .
 alg:negation rdfs:label "negation" .
 alg:questionY-N aamas:lang aama:Alagwa .
-alg:questionY-N rdf:type alg:Sentfunction .
+alg:questionY-N rdf:type aamas:Sentfunction .
 alg:questionY-N rdfs:label "questionY-N" .
 alg:subordination aamas:lang aama:Alagwa .
-alg:subordination rdf:type alg:Sentfunction .
+alg:subordination rdf:type aamas:Sentfunction .
 alg:subordination rdfs:label "subordination" .
 
 #SCHEMATA: clauseTypeSel
@@ -522,10 +521,10 @@ alg:clauseTypeSel rdfs:range alg:Clausetypesel .
 alg:Clausetypesel rdfs:subClassOf alg:MuExponent .
 alg:clauseTypeSel rdfs:subPropertyOf alg:muProperty .
 alg:ConsecutiveSel aamas:lang aama:Alagwa .
-alg:ConsecutiveSel rdf:type alg:Clausetypesel .
+alg:ConsecutiveSel rdf:type aamas:Clausetypesel .
 alg:ConsecutiveSel rdfs:label "ConsecutiveSel" .
 alg:NonConsecutiveSel aamas:lang aama:Alagwa .
-alg:NonConsecutiveSel rdf:type alg:Clausetypesel .
+alg:NonConsecutiveSel rdf:type aamas:Clausetypesel .
 alg:NonConsecutiveSel rdfs:label "NonConsecutiveSel" .
 
 #SCHEMATA: gender
@@ -538,102 +537,68 @@ alg:gender rdfs:range alg:Gender .
 alg:Gender rdfs:subClassOf alg:MuExponent .
 alg:gender rdfs:subPropertyOf alg:muProperty .
 alg:Common aamas:lang aama:Alagwa .
-alg:Common rdf:type alg:Gender .
+alg:Common rdf:type aamas:Gender .
 alg:Common rdfs:label "Common" .
 alg:Fem aamas:lang aama:Alagwa .
-alg:Fem rdf:type alg:Gender .
+alg:Fem rdf:type aamas:Gender .
 alg:Fem rdfs:label "Fem" .
 alg:Masc aamas:lang aama:Alagwa .
-alg:Masc rdf:type alg:Gender .
+alg:Masc rdf:type aamas:Gender .
 alg:Masc rdfs:label "Masc" .
 alg:Neut aamas:lang aama:Alagwa .
-alg:Neut rdf:type alg:Gender .
+alg:Neut rdf:type aamas:Gender .
 alg:Neut rdfs:label "Neut" .
 
-#PCLASSES:
+#LEXEMES: Alagwa
 
-alg:person aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-alg:number aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-alg:gender aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-alg:case aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:defClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:deixis aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:derivedStem aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:derivedStemAug aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:participle aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:polarity aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:pos aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:proClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:tam aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-alg:conjClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-alg:pluralClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-alg:postpositionClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-alg:rootClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
+#LexItems: Alagwa
 
-#LEXEMES:
-
-##LexItems
 aama:Alagwa-doosl a aamas:Lexeme ;
-	aamas:lang aama:Alagwa ;
+	aamas:lang aama:alagwa ;
 	rdfs:label "doosl" ;
-	aamas:lemma "" ;
-	aamas:gloss "cultivate" ;
+	aamas:lemma "" ; 
+	aamas:gloss "cultivate" ; 
 	.
 aama:Alagwa-hhe7ees a aamas:Lexeme ;
-	aamas:lang aama:Alagwa ;
+	aamas:lang aama:alagwa ;
 	rdfs:label "hhe7ees" ;
-	aamas:lemma "" ;
-	aamas:gloss "finish" ;
+	aamas:lemma "" ; 
+	aamas:gloss "finish" ; 
 	.
 aama:Alagwa-ibiit a aamas:Lexeme ;
-	aamas:lang aama:Alagwa ;
+	aamas:lang aama:alagwa ;
 	rdfs:label "ibiit" ;
-	aamas:lemma "" ;
-	aamas:gloss "sit, live" ;
+	aamas:lemma "" ; 
+	aamas:gloss "sit, live" ; 
 	.
 aama:Alagwa-kitahh a aamas:Lexeme ;
-	aamas:lang aama:Alagwa ;
+	aamas:lang aama:alagwa ;
 	rdfs:label "kitahh" ;
-	aamas:lemma "" ;
-	aamas:gloss "drink" ;
+	aamas:lemma "" ; 
+	aamas:gloss "drink" ; 
 	.
 aama:Alagwa-slaw a aamas:Lexeme ;
-	aamas:lang aama:Alagwa ;
+	aamas:lang aama:alagwa ;
 	rdfs:label "slaw" ;
-	aamas:lemma "" ;
-	aamas:gloss "get, meet" ;
+	aamas:lemma "" ; 
+	aamas:gloss "get, meet" ; 
 	.
 aama:Alagwa-waar a aamas:Lexeme ;
-	aamas:lang aama:Alagwa ;
+	aamas:lang aama:alagwa ;
 	rdfs:label "waar" ;
-	aamas:lemma "" ;
-	aamas:gloss "be present, come" ;
+	aamas:lemma "" ; 
+	aamas:gloss "be present, come" ; 
 	.
 aama:Alagwa-xaw a aamas:Lexeme ;
-	aamas:lang aama:Alagwa ;
+	aamas:lang aama:alagwa ;
 	rdfs:label "xaw" ;
-	aamas:lemma "" ;
-	aamas:gloss "come" ;
+	aamas:lemma "" ; 
+	aamas:gloss "come" ; 
 	.
 
-#TERMCLUSTER:  alagwa-V-conj1-pres-aff
+#TERMCLUSTERS: Alagwa
+
+#TERMCLUSTER: alagwa-V-conj1-pres-aff
 
 alg:alagwa-V-conj1-pres-aff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj1-pres-aff" ;
@@ -641,119 +606,119 @@ alg:alagwa-V-conj1-pres-aff a aamas:Termcluster ;
 	rdfs:comment "MOt6.1 " 
 	.
 
-aama:ID2665e6d0-e19f-49a9-b641-f6c3405de43e a aamas:Term ;
+aama:ID7a418129-84a5-4865-aaaf-7943bfd087fd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a kitahham" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID8f8d7893-ec33-4054-a10f-a877df041265 a aamas:Term ;
+aama:ID086921a2-18ee-44f9-8e92-ddf319a2bbe1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a kitahhant" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDc144150b-8827-48b5-9a23-a38f6246e999 a aamas:Term ;
+aama:IDd68bde08-3b86-4564-a73a-2981425a7d5b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i kitahhan" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i kitahhan" ;
 	.
 
-aama:ID26d8e4cb-c9eb-49b4-9339-4748a9eb71d6 a aamas:Term ;
+aama:IDae097962-dd51-45cb-94df-89071f2e30ab a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i kitahhant" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i kitahhant" ;
 	.
 
-aama:ID124688a5-23d8-4d0a-96b3-562109e21f94 a aamas:Term ;
+aama:ID11380afe-8565-4d98-9488-36f36206f3be a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a kitahhaman" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a kitahhaman" ;
 	.
 
-aama:IDa84c117b-fa44-4f1e-8d50-c9b997bcb4c9 a aamas:Term ;
+aama:ID08237b2e-4aec-4618-9757-1372b54d9162 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a kitahhamtaa'" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a kitahhamtaa'" ;
 	.
 
-aama:ID42eb778c-4c4a-41a1-8f10-c588b1343880 a aamas:Term ;
+aama:ID85980a28-59b6-4a30-961d-a00c30c41fe3 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a kitahhamaa;" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a kitahhamaa;" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj1-pres-neg
+#TERMCLUSTER: alagwa-V-conj1-pres-neg
 
 alg:alagwa-V-conj1-pres-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj1-pres-neg" ;
@@ -761,119 +726,119 @@ alg:alagwa-V-conj1-pres-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.1 " 
 	.
 
-aama:ID43593195-bdd5-4faf-a7f7-49eb0c87ed29 a aamas:Term ;
+aama:ID897cb688-d684-4640-9276-f30d4a161005 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a kitahham-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID0b73846f-bf9a-49ac-9692-f62a40860798 a aamas:Term ;
+aama:ID2dc9527e-7156-48d5-a4df-859aaab323cd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a kitahhant-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDd4c3eceb-a740-45d0-9ea2-6215b8c300fb a aamas:Term ;
+aama:IDd9492508-da1d-43cd-9ff1-257c73b7979d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "i kitahhan-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i kitahhan-áabasl" ;
 	.
 
-aama:IDed3c0306-9f4f-47c2-a001-da4783859acb a aamas:Term ;
+aama:ID7ccd8314-7496-4d42-946c-487e20499318 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "i kitahhant-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i kitahhant-áabasl" ;
 	.
 
-aama:IDcedf6c60-bb68-4d03-955a-35a9e9f49bdb a aamas:Term ;
+aama:ID7f9e7bd8-3f24-447f-b872-22a91c45012d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "a kitahhaman-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a kitahhaman-áabasl" ;
 	.
 
-aama:ID72a4fdd3-c385-41a0-9384-596ade92d591 a aamas:Term ;
+aama:IDca01508a-0d8a-4846-92a5-b804642c1729 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "a kitahhamtaa'-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a kitahhamtaa'-áabasl" ;
 	.
 
-aama:IDb8abe52d-5a0a-4f14-af4a-5f9dce7956f6 a aamas:Term ;
+aama:IDcd317b9f-c74b-4846-8b3c-30d9e483a008 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Present ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "a kitahhamaa;-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a kitahhamaa;-áabasl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj1-past-neg
+#TERMCLUSTER: alagwa-V-conj1-past-neg
 
 alg:alagwa-V-conj1-past-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj1-past-neg" ;
@@ -881,119 +846,119 @@ alg:alagwa-V-conj1-past-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.2 " 
 	.
 
-aama:IDd92927b3-519b-44d0-a4d6-8bc666f33ff8 a aamas:Term ;
+aama:ID283aa91f-8604-4e6a-b6e0-b78cdf6a2d50 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Past ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "an kitahhám-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDe710ee5b-bd43-4bbc-8c82-40c5dfc9d795 a aamas:Term ;
+aama:IDa7b01310-584a-4ed2-9d0f-e93088ae0eb7 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Past ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "an kitahháant-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID6ac07d86-f494-4286-917b-97352a4a5fc5 a aamas:Term ;
+aama:ID55b2a465-7d55-4428-862a-3e9bf3e9e3de a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Past ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "in kitahhán-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in kitahhán-íibasl" ;
 	.
 
-aama:ID0aa914df-4540-4918-bc7f-1ee6129efd41 a aamas:Term ;
+aama:ID50b03c07-098e-4bfc-883c-aa1dda0d49eb a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Past ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "in kitahháant-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in kitahháant-íibasl" ;
 	.
 
-aama:IDbe15a19b-fca0-4aa1-86e0-39565361a41a a aamas:Term ;
+aama:ID7f09fae0-6fbe-4e70-a45c-2be6da992bf8 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Past ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "an kitahháman-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an kitahháman-íibasl" ;
 	.
 
-aama:IDdfd5b87d-f54b-4428-b5a6-13dee64be56c a aamas:Term ;
+aama:ID155dff9e-f7cb-4b6c-a45d-e608e7ed462a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Past ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "an kitahhántee'-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an kitahhántee'-íibasl" ;
 	.
 
-aama:IDc02802b3-71d3-4f44-b062-9bd8fa49fedb a aamas:Term ;
+aama:ID391f1404-dafe-4edd-ba93-55a342c9e647 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj1-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-kitahh ;
-	alg:derv alg:Imperfective ;
 	alg:conjClass alg:C1 ;
-	alg:tam alg:Past ;
+	alg:derv alg:Imperfective ;
+	aamas:lexeme aama:Alagwa-kitahh ;
 	alg:polarity alg:Negative ;
-	alg:token "in kitahhánee'-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "in kitahhánee'-íibasl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj2-pres-aff
+#TERMCLUSTER: alagwa-V-conj2-pres-aff
 
 alg:alagwa-V-conj2-pres-aff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj2-pres-aff" ;
@@ -1001,112 +966,112 @@ alg:alagwa-V-conj2-pres-aff a aamas:Termcluster ;
 	rdfs:comment "MOt6.3 " 
 	.
 
-aama:IDa795c2ab-1fc0-42cd-aa36-9b2de953df03 a aamas:Term ;
+aama:ID473a299a-e3ba-4ff1-b9fe-7613aa4f5410 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a xaw" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID43a939eb-4fa4-4d8b-967b-470463fbaacb a aamas:Term ;
+aama:IDa3f0a970-7f06-4592-8b12-fb070badc93b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a xawt" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDa7315e0d-9a07-466c-94cf-431d573e5a9c a aamas:Term ;
+aama:IDf2989343-a2b2-431b-b25b-291494ee155d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i xay" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i xay" ;
 	.
 
-aama:ID00e3302b-7b01-495c-8a52-b9708b3fc88b a aamas:Term ;
+aama:IDf42b2675-4aa4-499b-b6a1-de2ec7048ea2 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i xawt" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i xawt" ;
 	.
 
-aama:IDe3e44c25-4370-47b5-b475-ae16e152b0f3 a aamas:Term ;
+aama:IDc031a16f-35f4-4e74-94a6-63453557a0fe a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a xawan" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a xawan" ;
 	.
 
-aama:IDa2ce3ebc-17d9-46aa-a78b-7164349b83f9 a aamas:Term ;
+aama:ID91e3a6eb-ae44-4dd9-92e5-cc186a109af8 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a xawtaa'" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a xawtaa'" ;
 	.
 
-aama:ID21a8f7ff-4258-4b70-855f-62b6216e3569 a aamas:Term ;
+aama:ID2fdf085c-d820-4a18-839a-665ef6fadb0b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a xayaa'" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a xayaa'" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj2-pres-neg
+#TERMCLUSTER: alagwa-V-conj2-pres-neg
 
 alg:alagwa-V-conj2-pres-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj2-pres-neg" ;
@@ -1114,112 +1079,112 @@ alg:alagwa-V-conj2-pres-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.3 " 
 	.
 
-aama:ID929e3c03-827b-4f29-9be3-3540cc405dcf a aamas:Term ;
+aama:IDe3bf42f8-1303-4a64-8d34-4bba96cf694c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a xaw-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDf240d81a-4ba3-4cff-a348-e7b383a220a7 a aamas:Term ;
+aama:ID0b818737-77fa-43a6-a214-96cb01498c6a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a xawt-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID0c514074-f279-4dab-ad1f-baf09a679287 a aamas:Term ;
+aama:ID13770542-1e2b-4031-a1ad-5b971bdac6a2 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Negative ;
-	alg:token "i xay-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i xay-áabasl" ;
 	.
 
-aama:IDc6e86cb4-6058-4dad-b7aa-2fd4d42929ac a aamas:Term ;
+aama:ID11dc1620-05b7-47b0-8ff2-537b42aa68f2 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Negative ;
-	alg:token "i xawt-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i xawt-áabasl" ;
 	.
 
-aama:ID8e8c3253-9ca5-42a6-bfc7-2e03152fcbf3 a aamas:Term ;
+aama:IDc11edcae-1896-4251-a0e5-5cfd1e63a058 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Negative ;
-	alg:token "a xawan-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a xawan-áabasl" ;
 	.
 
-aama:ID3805074f-25a1-4695-8f2f-c1ae95edf033 a aamas:Term ;
+aama:ID88554a89-cb83-474a-ae44-1f2870159852 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Negative ;
-	alg:token "a xawtaa'-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a xawtaa'-áabasl" ;
 	.
 
-aama:ID0ff16c01-d66d-46f9-bd01-5b9f7a883c51 a aamas:Term ;
+aama:ID32f04c94-5915-4947-85e6-85be3b7595ec a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-xaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-xaw ;
 	alg:polarity alg:Negative ;
-	alg:token "a xayaa'-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a xayaa'-áabasl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj2-past-aff
+#TERMCLUSTER: alagwa-V-conj2-past-aff
 
 alg:alagwa-V-conj2-past-aff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj2-past-aff" ;
@@ -1227,112 +1192,112 @@ alg:alagwa-V-conj2-past-aff a aamas:Termcluster ;
 	rdfs:comment "MOt6.4 " 
 	.
 
-aama:IDaae8bfb4-465b-4f93-8035-dc68241620b8 a aamas:Term ;
+aama:IDe0da222a-aa6f-4c7a-913b-96f153157216 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "an slaw" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID51dd750b-0c39-4084-8a5b-94cb4c065f7e a aamas:Term ;
+aama:IDf3a94bf3-4c48-4582-a5ae-3201d1490046 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "an slawt" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID7fec95d9-df4e-470c-a352-44f69783b3d1 a aamas:Term ;
+aama:ID3c28d2d8-c14b-47eb-9a4b-d19a11759975 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "in slay" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in slay" ;
 	.
 
-aama:ID3ea35d7c-44af-4cc9-9946-efffdacc18d0 a aamas:Term ;
+aama:ID75e7e4ee-efad-403f-b106-3b80cfa1ba14 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "in slawt" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in slawt" ;
 	.
 
-aama:IDb65a1a2d-6b55-481f-a974-33d45c914af9 a aamas:Term ;
+aama:ID58e33605-8091-4167-92db-8812d5863c7c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an slawan" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an slawan" ;
 	.
 
-aama:IDc61a998c-3eec-47ff-b98d-b2e9f1013d42 a aamas:Term ;
+aama:ID3c7775f0-b621-47d1-8934-0633abd0cb5a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an slawtee'" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an slawtee'" ;
 	.
 
-aama:ID9f0653ba-16e1-4b11-8ab6-90d0e6eddb3e a aamas:Term ;
+aama:ID277a547f-179d-48c1-92c6-0f1e9a9e9cd1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a slayee'" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a slayee'" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj2-past-neg
+#TERMCLUSTER: alagwa-V-conj2-past-neg
 
 alg:alagwa-V-conj2-past-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj2-past-neg" ;
@@ -1340,112 +1305,112 @@ alg:alagwa-V-conj2-past-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.4 " 
 	.
 
-aama:ID2ce646a9-9094-45bc-bce9-13adbe4c391b a aamas:Term ;
+aama:IDe97ce242-995a-476f-b46e-d4bf69ea090c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "an slaw-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDf50b87a0-7e12-4b04-9183-c835c5c1b0a3 a aamas:Term ;
+aama:IDa83a14d1-a23f-433b-8846-d00fb157a9d3 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "an slawt-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID6650ea93-206a-4c79-a156-e98d0d62dc77 a aamas:Term ;
+aama:ID83ba0e47-06bb-481c-b31f-bfbe97e94278 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Negative ;
-	alg:token "in slay-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in slay-íibasl" ;
 	.
 
-aama:ID41a91cbe-8fb4-4592-95b8-25fb63110ad5 a aamas:Term ;
+aama:ID6d323fc6-ec8e-4e9e-9637-75bd8b831b9d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Negative ;
-	alg:token "in slawt-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in slawt-íibasl" ;
 	.
 
-aama:ID54bfa415-048b-4887-b530-2027a4c56d19 a aamas:Term ;
+aama:ID36b47e5d-d82d-4acc-be57-455529565aee a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Negative ;
-	alg:token "an slawan-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an slawan-íibasl" ;
 	.
 
-aama:ID971bcc2d-0038-4008-9fe5-d04ed0b79277 a aamas:Term ;
+aama:IDa4eef494-1d01-4ac0-a876-4fdf5c334dc9 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Negative ;
-	alg:token "an slawtee'-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an slawtee'-íibasl" ;
 	.
 
-aama:ID34b42527-175e-4ea2-a904-c58d5af58197 a aamas:Term ;
+aama:IDb965422b-d485-4ad7-bb0d-3e68fe0b7f9f a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj2-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-slaw ;
 	alg:conjClass alg:C2 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-slaw ;
 	alg:polarity alg:Negative ;
-	alg:token "a slayee'-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a slayee'-íibasl" ;
 	.
 
-#TERMCLUSTER:  alacwa-V-conj3-pres-aff
+#TERMCLUSTER: alacwa-V-conj3-pres-aff
 
 alg:alacwa-V-conj3-pres-aff a aamas:Termcluster ;
 	rdfs:label "alacwa-V-conj3-pres-aff" ;
@@ -1453,112 +1418,112 @@ alg:alacwa-V-conj3-pres-aff a aamas:Termcluster ;
 	rdfs:comment "MOt6.5 " 
 	.
 
-aama:ID0184ee02-de28-4600-83c3-29a08338640f a aamas:Term ;
+aama:IDc8f91d5c-fd9c-445d-9bb7-e048fd31b07b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alacwa-V-conj3-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a waar" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID0096f244-daf9-4626-969a-e690f3f591a8 a aamas:Term ;
+aama:ID23843dd6-fd8c-411b-859e-1ab1bba33de1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alacwa-V-conj3-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a waant" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID49f6ed34-a014-4980-aa35-9b8a931b5b5e a aamas:Term ;
+aama:IDeb82f52c-1e38-497e-9f37-f612e11ca2af a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alacwa-V-conj3-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i wan" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i wan" ;
 	.
 
-aama:IDffe42208-7f5d-4c60-b5a0-e595751e6c58 a aamas:Term ;
+aama:IDa2783d57-bdd4-4097-9f69-fb5e4ed239a1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alacwa-V-conj3-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i waant" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i waant" ;
 	.
 
-aama:ID32398853-142e-4ca3-9ff6-871fbb568695 a aamas:Term ;
+aama:IDe56fe7c3-a6ba-4696-b8e8-b446d5240ba6 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alacwa-V-conj3-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a waaran" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a waaran" ;
 	.
 
-aama:IDda3e86e3-912a-4d05-979c-70c4b6633d90 a aamas:Term ;
+aama:IDac5d4656-40d8-42c8-a186-c9002273691a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alacwa-V-conj3-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a waartaa'" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a waartaa'" ;
 	.
 
-aama:ID58100afb-90ea-4a77-9016-5c0bf6523ed1 a aamas:Term ;
+aama:IDb3324543-2358-42b5-ba05-0e248d209ddd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alacwa-V-conj3-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a wanaa." ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a wanaa." ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj3-pres-neg
+#TERMCLUSTER: alagwa-V-conj3-pres-neg
 
 alg:alagwa-V-conj3-pres-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj3-pres-neg" ;
@@ -1566,112 +1531,112 @@ alg:alagwa-V-conj3-pres-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.5 " 
 	.
 
-aama:ID4abd5db6-7af2-42de-8b28-ff6d92ac10df a aamas:Term ;
+aama:ID3c21c2ef-5023-44e1-881f-68decbdc668e a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a waar-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDf27a19e0-8719-4bbf-92ae-02860acfd074 a aamas:Term ;
+aama:IDe8370940-eef3-4348-9dcf-b34fe7d9cdaf a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a waant-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDf8762562-0268-44a8-8274-55260791543e a aamas:Term ;
+aama:IDcf829812-c201-40cd-ad88-b807a21844fe a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "i wan-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i wan-áabasl" ;
 	.
 
-aama:IDb95745e9-d49e-4644-8d4c-808f394b795d a aamas:Term ;
+aama:ID323c9339-56cc-4753-8e75-34b422bec46b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "i waant-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i waant-áabasl" ;
 	.
 
-aama:ID616d6ec2-6c6f-4add-8b24-e9361b1867c7 a aamas:Term ;
+aama:IDd74ec84f-5ef7-4d5b-8c3e-7310ca4ea160 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "a waaran-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a waaran-áabasl" ;
 	.
 
-aama:IDa5a7466b-c043-404b-99c6-91222b1153e3 a aamas:Term ;
+aama:IDbc4f1a0b-68ff-4e06-84b5-724bc3cb6f36 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "a waartaa'-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a waartaa'-áabasl" ;
 	.
 
-aama:IDc26c8d63-a0a8-4cfd-bf43-0df25527e0c3 a aamas:Term ;
+aama:IDf4af35ce-a21c-41cf-ae35-5ae02197bfdf a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "a wanaa'-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a wanaa'-áabasl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj3-past-aff
+#TERMCLUSTER: alagwa-V-conj3-past-aff
 
 alg:alagwa-V-conj3-past-aff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj3-past-aff" ;
@@ -1679,112 +1644,112 @@ alg:alagwa-V-conj3-past-aff a aamas:Termcluster ;
 	rdfs:comment "MOt6.6 " 
 	.
 
-aama:IDc7f2fa3a-edaf-4fd6-b430-85a26c24b988 a aamas:Term ;
+aama:IDa0b7b5dc-f8e1-44e3-897a-1516aa812ca4 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "an waar" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDd1d3a336-9d5f-4fc4-a305-c357ad6882dc a aamas:Term ;
+aama:IDb28f5399-9ef5-4c7d-bb20-21585958f816 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "an waant" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID1e8ff6ce-4d08-4f1f-ab1b-a15158166bac a aamas:Term ;
+aama:ID6b2d1122-7b51-49db-a707-876fdafabb40 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "in wan" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in wan" ;
 	.
 
-aama:ID6b7722fa-a7d0-406c-b59f-1ea5a867b370 a aamas:Term ;
+aama:ID55e3f76a-f437-40ff-9dd9-effb62bdf2d8 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "in waant" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in waant" ;
 	.
 
-aama:ID4a4e5617-1774-4f3a-88f0-2b21f17c15c6 a aamas:Term ;
+aama:ID2a7ed9af-0b1c-4d5f-9526-6d9726b2cd97 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an waaran" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an waaran" ;
 	.
 
-aama:IDfaa65a66-188d-4e80-be80-d349d13818e6 a aamas:Term ;
+aama:IDa359b5d4-580e-49fd-be8f-739732b64447 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an waartee'" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an waartee'" ;
 	.
 
-aama:ID603b2c75-fb23-4985-8bfc-b6caf241ca6b a aamas:Term ;
+aama:ID1dc40100-9340-4fa0-8eb7-36924dfd1c75 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Affirmative ;
-	alg:token "in wanee'" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "in wanee'" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj3-past-neg
+#TERMCLUSTER: alagwa-V-conj3-past-neg
 
 alg:alagwa-V-conj3-past-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj3-past-neg" ;
@@ -1792,112 +1757,112 @@ alg:alagwa-V-conj3-past-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.6 " 
 	.
 
-aama:IDb818a4aa-f7f3-41d3-82bd-33c0aa12f72b a aamas:Term ;
+aama:ID4ba3c5aa-3019-40d9-8f93-510599838c1b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "an waar-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID0fac4335-9036-483c-baab-17164ae623fa a aamas:Term ;
+aama:ID2daa8875-94cb-452f-93d5-f0d50b389f65 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "an waant-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID2d177cea-b422-4cb6-bc63-623a3649a9ff a aamas:Term ;
+aama:IDe349b651-e40e-4d2a-a06a-41f48351ed8a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "in wan-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in wan-íibasl" ;
 	.
 
-aama:ID083ba26c-8f76-4d85-a165-d3e8404238d5 a aamas:Term ;
+aama:ID92330cb7-0b6a-4019-9596-c58519165c1a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "in waant-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "in waant-íibasl" ;
 	.
 
-aama:ID0e378766-d94c-4b54-961e-ca48010e87b0 a aamas:Term ;
+aama:IDb368917a-101b-4ac9-83d9-18ebb1df49ef a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "an waaran-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an waaran-íibasl" ;
 	.
 
-aama:IDf46d14f6-2cc3-4899-b964-fb093e6b5119 a aamas:Term ;
+aama:IDaa8c3d0e-b7a1-4187-9427-05cbaf0359ed a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "an waartee'-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an waartee'-íibasl" ;
 	.
 
-aama:IDca015e0c-b2b4-4da5-818e-114476328d35 a aamas:Term ;
+aama:IDcc821a98-b7bb-4e52-8856-2ad4c4752a46 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj3-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-waar ;
 	alg:conjClass alg:C3 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-waar ;
 	alg:polarity alg:Negative ;
-	alg:token "in wanee'-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "in wanee'-íibasl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj4-pres-aff
+#TERMCLUSTER: alagwa-V-conj4-pres-aff
 
 alg:alagwa-V-conj4-pres-aff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj4-pres-aff" ;
@@ -1905,112 +1870,112 @@ alg:alagwa-V-conj4-pres-aff a aamas:Termcluster ;
 	rdfs:comment "MOt6.7 " 
 	.
 
-aama:ID5569e073-6604-4a68-813a-e86cb1a47e60 a aamas:Term ;
+aama:ID687fa4dc-efd2-4990-94bf-4f8e0d106275 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a ibiit" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDc7ebd938-818f-4d49-8210-ec46236202b1 a aamas:Term ;
+aama:ID53c26ecd-a0b7-468f-8eee-8edfa7a5c735 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a ibit" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID21c4f5bd-766e-4c9e-b065-8bc60b347a71 a aamas:Term ;
+aama:IDd4bdeac7-6179-4f82-b6d1-35128fa90662 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i ibiiti" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i ibiiti" ;
 	.
 
-aama:ID7c311285-d19b-4b3a-9bf1-6e0f0db33666 a aamas:Term ;
+aama:IDcbc38a24-28e7-4e9d-bea7-2114be5837fb a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Affirmative ;
-	alg:token "i ibit" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i ibit" ;
 	.
 
-aama:IDf642099e-2268-49e5-b075-cd8b681a3c74 a aamas:Term ;
+aama:IDc6eb81ae-997c-406f-ac3c-05b79702d791 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a ibiitan" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a ibiitan" ;
 	.
 
-aama:IDe755c99c-0924-4589-a85e-47b93368d6ad a aamas:Term ;
+aama:IDab47f43e-417e-4e77-bdd2-9a9b3e74114a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a ibitaa'" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a ibitaa'" ;
 	.
 
-aama:ID77adef1e-bed9-47c9-a488-f127dbd546dc a aamas:Term ;
+aama:IDdd2808ca-d281-4276-a806-e5f755431530 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Affirmative ;
-	alg:token "a ibiitiya'" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a ibiitiya'" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj4-pres-neg
+#TERMCLUSTER: alagwa-V-conj4-pres-neg
 
 alg:alagwa-V-conj4-pres-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj4-pres-neg" ;
@@ -2018,112 +1983,112 @@ alg:alagwa-V-conj4-pres-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.7 " 
 	.
 
-aama:IDbaa38d4e-da93-4307-8a29-dd9013181859 a aamas:Term ;
+aama:ID1d00eb0e-927a-4a4d-a85b-9bbf1da2eccf a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "a ibiit-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:IDbd83797c-e634-49dc-b9a0-ed7f6393d648 a aamas:Term ;
+aama:ID22e2d8be-a290-42f0-9c2a-afa851c32b69 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
 	alg:token "a ibit-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID4ad78a27-6be8-4a9e-b59f-040f3645f51b a aamas:Term ;
+aama:IDf6aec3a4-e940-4452-a51a-0017f7cc0080 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Negative ;
-	alg:token "i ibiiti-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i ibiiti-áabasl" ;
 	.
 
-aama:ID29fd4179-a211-43da-9d24-62a060e197cd a aamas:Term ;
+aama:ID3e8f7a40-b299-44c2-aa79-464f0d65d83f a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Negative ;
-	alg:token "i ibit-áabasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "i ibit-áabasl" ;
 	.
 
-aama:ID3a782881-c195-4015-8120-4562ac0e37fd a aamas:Term ;
+aama:IDa875e5c9-11aa-4910-8185-c91f9a5a7bca a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Negative ;
-	alg:token "a ibiitan-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a ibiitan-áabasl" ;
 	.
 
-aama:IDb5d464bf-0349-4bf6-8e0e-610449d307de a aamas:Term ;
+aama:ID8b256b2e-f32a-4e5c-ab14-d680701fb42c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Negative ;
-	alg:token "a ibitaa'-áabasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "a ibitaa'-áabasl" ;
 	.
 
-aama:ID80bcc717-4c12-406f-9d81-cad43aaa0deb a aamas:Term ;
+aama:IDd98fddbd-0b63-4ec2-853d-8287386f157c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-pres-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Present ;
+	aamas:lexeme aama:Alagwa-ibiit ;
 	alg:polarity alg:Negative ;
-	alg:token "a ibiitiya'-áabasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Present ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "a ibiitiya'-áabasl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj4-past-aff
+#TERMCLUSTER: alagwa-V-conj4-past-aff
 
 alg:alagwa-V-conj4-past-aff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj4-past-aff" ;
@@ -2131,112 +2096,112 @@ alg:alagwa-V-conj4-past-aff a aamas:Termcluster ;
 	rdfs:comment "MOt6.8 " 
 	.
 
-aama:IDd41ef741-0e25-468d-a7ad-7c6a4343358a a aamas:Term ;
+aama:IDca4c82eb-c995-4520-bc2a-5bb49c79f5f1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an hhe'ees " ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
 	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	.
-
-aama:ID97076b03-f484-46ae-bb33-573507531337 a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
-	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
-	alg:polarity alg:Affirmative ;
-	alg:token "an hhe'eesit " ;
 	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
+	alg:token "an hhe'ees " ;
 	.
 
-aama:ID8ec7b82e-929e-488a-93fa-54a790b45842 a aamas:Term ;
+aama:IDbfe008d3-1003-453d-a488-add4921b77eb a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an hhe'ees " ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesit " ;
+	.
+
+aama:IDba5fea2b-c07c-4c40-a8fc-18deafe89b94 a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
+	alg:conjClass alg:C4 ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
+	alg:polarity alg:Affirmative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "an hhe'ees " ;
 	.
 
-aama:ID5dbdb55f-ff25-4f5e-94ee-53f8bac51c08 a aamas:Term ;
+aama:IDedf9c254-b2e9-46e3-b30f-77041efa6cd4 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an hhe'eesit " ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "an hhe'eesit " ;
 	.
 
-aama:IDea307906-0179-4216-8316-136f6270431e a aamas:Term ;
+aama:ID4577a97c-bc9a-47ec-920e-292c683d3a9d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an hhe'eesan " ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesan " ;
 	.
 
-aama:ID1fc2dd7e-8874-40b6-9899-910146df48fc a aamas:Term ;
+aama:ID9fa9d382-3434-4fdd-8759-590f753aba82 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an hhe'eesitee' " ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesitee' " ;
 	.
 
-aama:IDe2272067-c741-4191-bd76-3bb39350bc0e a aamas:Term ;
+aama:ID71d95a0f-435e-4ece-9175-11b5b1cab411 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-aff ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Affirmative ;
-	alg:token "an hhe'eesir " ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesir " ;
 	.
 
-#TERMCLUSTER:  alagwa-V-conj4-past-neg
+#TERMCLUSTER: alagwa-V-conj4-past-neg
 
 alg:alagwa-V-conj4-past-neg a aamas:Termcluster ;
 	rdfs:label "alagwa-V-conj4-past-neg" ;
@@ -2244,112 +2209,112 @@ alg:alagwa-V-conj4-past-neg a aamas:Termcluster ;
 	rdfs:comment "MOt6.8 " 
 	.
 
-aama:ID48615ea2-bf13-4feb-b972-889bcb7ba4de a aamas:Term ;
+aama:ID375d5f0f-7306-4045-9e92-38b156719162 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Negative ;
-	alg:token "an hhe'ees-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
 	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	.
-
-aama:IDb4b0d2f9-7a9e-4c71-b8ec-26f4bc29b2fd a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
-	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
-	alg:polarity alg:Negative ;
-	alg:token "an hhe'eesit-íibasl" ;
 	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
+	alg:token "an hhe'ees-íibasl" ;
 	.
 
-aama:ID898cd839-ae26-4f54-bfde-664a81a33377 a aamas:Term ;
+aama:IDa8e47dae-fc14-4520-8343-cf11b3091219 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Negative ;
-	alg:token "an hhe'ees-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesit-íibasl" ;
+	.
+
+aama:ID71d51a37-2b92-44c9-882f-bbb20919bfa5 a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
+	alg:conjClass alg:C4 ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
+	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "an hhe'ees-íibasl" ;
 	.
 
-aama:IDdd4e1fde-b7cb-43cf-8ab9-31afb835927d a aamas:Term ;
+aama:ID418dffda-04f7-4cbf-bdcb-7996b7686c2f a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Negative ;
-	alg:token "an hhe'eesit-íibasl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "an hhe'eesit-íibasl" ;
 	.
 
-aama:ID2a349dce-df1f-4b8c-a70a-beb46798e92d a aamas:Term ;
+aama:IDd4d74bb9-fcff-41e2-811a-92d6ec6054d5 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Negative ;
-	alg:token "an hhe'eesan-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesan-íibasl" ;
 	.
 
-aama:ID72c3dda3-85b9-4e27-9f71-0f65b7e5496f a aamas:Term ;
+aama:ID094d5559-08b9-4915-8a77-2fc0ce56c723 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Negative ;
-	alg:token "an hhe'eesitee'-íibasl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesitee'-íibasl" ;
 	.
 
-aama:IDaa4298fc-bfc0-407b-90bd-e0edd186eefd a aamas:Term ;
+aama:IDf61bf0b8-28f3-49f4-bb67-edd456bb7201 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-conj4-past-neg ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Past ;
+	aamas:lexeme aama:Alagwa-hhe7ees ;
 	alg:polarity alg:Negative ;
-	alg:token "an hhe'eesir-íibasl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Past ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "an hhe'eesir-íibasl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-prohibitive
+#TERMCLUSTER: alagwa-V-prohibitive
 
 alg:alagwa-V-prohibitive a aamas:Termcluster ;
 	rdfs:label "alagwa-V-prohibitive" ;
@@ -2357,112 +2322,112 @@ alg:alagwa-V-prohibitive a aamas:Termcluster ;
 	rdfs:comment "MOt6.11 " 
 	.
 
-aama:ID993708b0-8e2e-4d11-bbc1-eec4a776e57f a aamas:Term ;
+aama:ID69ae61d7-383c-4ff8-a406-8ec55b000eec a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-prohibitive ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-doosl ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Prohibitive ;
+	aamas:lexeme aama:Alagwa-doosl ;
 	alg:polarity alg:Negative ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Prohibitive ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "maaree' doosl- u-basl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID9ca4e3d6-08af-4c27-a360-e2fcd1fab597 a aamas:Term ;
+aama:ID1ccb9907-8939-4fe8-8dc1-2348cab60ab6 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-prohibitive ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-doosl ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Prohibitive ;
+	aamas:lexeme aama:Alagwa-doosl ;
 	alg:polarity alg:Negative ;
-	alg:token "maaree' doosl- iti-basl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Prohibitive ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
 	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
+	alg:gender alg:Common ;
+	alg:token "maaree' doosl- iti-basl" ;
 	.
 
-aama:ID1b350192-0738-46ae-ad19-ff5a4436e2c4 a aamas:Term ;
+aama:IDf0554941-642a-4a06-90f4-889a470b08e8 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-prohibitive ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-doosl ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Prohibitive ;
+	aamas:lexeme aama:Alagwa-doosl ;
 	alg:polarity alg:Negative ;
-	alg:token "maaree' doosl- i-basl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Prohibitive ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "maaree' doosl- i-basl" ;
 	.
 
-aama:ID09204fa5-85e6-4323-b63f-a18623910760 a aamas:Term ;
+aama:ID038f61f7-c207-4cdd-94e1-269234eb7c33 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-prohibitive ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-doosl ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Prohibitive ;
+	aamas:lexeme aama:Alagwa-doosl ;
 	alg:polarity alg:Negative ;
-	alg:token "maaree' doosl- iti-basl" ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Prohibitive ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "maaree' doosl- iti-basl" ;
 	.
 
-aama:ID01dbdf54-f7c6-4087-9e26-87d776bb45f5 a aamas:Term ;
+aama:ID7befe81d-c427-4061-83d0-779fb44c8a84 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-prohibitive ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-doosl ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Prohibitive ;
+	aamas:lexeme aama:Alagwa-doosl ;
 	alg:polarity alg:Negative ;
-	alg:token "maaree' doosl- an-basl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Prohibitive ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "maaree' doosl- an-basl" ;
 	.
 
-aama:ID223f9dca-7c16-4e3c-9e4b-e4d19d53e1e9 a aamas:Term ;
+aama:ID272511a6-2a0c-44fc-b7b5-5f8e008f3885 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-prohibitive ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-doosl ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Prohibitive ;
+	aamas:lexeme aama:Alagwa-doosl ;
 	alg:polarity alg:Negative ;
-	alg:token "maaree' doosl- it-ee'-basl" ;
-	alg:gender alg:Common ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Prohibitive ;
+	alg:vmorphClass alg:Finite ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "maaree' doosl- it-ee'-basl" ;
 	.
 
-aama:IDaffa99d0-20cc-40c5-8ddc-afbe6a3245b2 a aamas:Term ;
+aama:ID97640276-fba0-441c-bab2-2d347c585e6c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-prohibitive ;
-	alg:vmorphClass alg:Finite ;
-	alg:pos alg:Verb ;
-	aamas:lexeme aama:Alagwa-doosl ;
 	alg:conjClass alg:C4 ;
-	alg:tam alg:Prohibitive ;
+	aamas:lexeme aama:Alagwa-doosl ;
 	alg:polarity alg:Negative ;
-	alg:token "maaree' doosl- iy-ee'-basl" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
+	alg:pos alg:Verb ;
+	alg:tam alg:Prohibitive ;
+	alg:vmorphClass alg:Finite ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "maaree' doosl- iy-ee'-basl" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-SubjMarkers
+#TERMCLUSTER: alagwa-V-SubjMarkers
 
 alg:alagwa-V-SubjMarkers a aamas:Termcluster ;
 	rdfs:label "alagwa-V-SubjMarkers" ;
@@ -2470,84 +2435,84 @@ alg:alagwa-V-SubjMarkers a aamas:Termcluster ;
 	rdfs:comment "MOt6.9 :: Suff are past or present except where noted. " 
 	.
 
-aama:ID18e2e083-5083-429f-a9a9-31684fe12353 a aamas:Term ;
+aama:ID76bd5d31-b2aa-4160-aa54-9b27cbf5fb0d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SubjMarkers ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:Affix_SubjMark ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "- " ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID7bb4b206-0e82-4423-a8eb-4d32d95c7ba3 a aamas:Term ;
+aama:IDabce2315-7ac7-4e80-a626-6f7d3b1fc6d1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SubjMarkers ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:Affix_SubjMark ;
-	alg:token "-it" ;
-	alg:gender alg:Common ;
+	alg:number alg:Singular ;
 	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
+	alg:gender alg:Common ;
+	alg:token "-it" ;
 	.
 
-aama:ID7187ea3f-0dd9-4dee-989d-7f242f123104 a aamas:Term ;
+aama:ID76a535f9-cddb-4f85-8ff4-ce76bdb0b044 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SubjMarkers ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:Affix_SubjMark ;
-	alg:token "-i (Past) ~-a (Pres)" ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "-i (Past) ~-a (Pres)" ;
 	.
 
-aama:IDd6bea0c4-f863-4408-96f2-a5a9d5a60a58 a aamas:Term ;
+aama:ID98e64a8d-6025-4c03-bed5-8b37116257e7 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SubjMarkers ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:Affix_SubjMark ;
-	alg:token "-it" ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
+	alg:token "-it" ;
 	.
 
-aama:ID9206caea-414b-42c0-b66f-9e524d32d721 a aamas:Term ;
+aama:ID4cfd2cc5-5b48-4180-bc3c-01112b20787c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SubjMarkers ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:Affix_SubjMark ;
-	alg:token "-an" ;
-	alg:gender alg:Common ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "-an" ;
 	.
 
-aama:IDfdee1baa-5bb5-441c-bd42-500fed748f81 a aamas:Term ;
+aama:IDbb17f2e3-e5e5-4749-8d06-fd6039203d05 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SubjMarkers ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:Affix_SubjMark ;
-	alg:token "-it-aa'" ;
-	alg:gender alg:Common ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "-it-aa'" ;
 	.
 
-aama:ID848c232c-d049-426f-a418-65f5428cb68a a aamas:Term ;
+aama:ID84e12a4d-8d13-4607-b1e9-649103df598b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SubjMarkers ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:Affix_SubjMark ;
-	alg:token "-i-aa' ~-ri (Past only)" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "-i-aa' ~-ri (Past only)" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-SententialSuff
+#TERMCLUSTER: alagwa-V-SententialSuff
 
 alg:alagwa-V-SententialSuff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-SententialSuff" ;
@@ -2555,52 +2520,52 @@ alg:alagwa-V-SententialSuff a aamas:Termcluster ;
 	rdfs:comment "MOt6.12" 
 	.
 
-aama:ID871f8abf-8747-424c-8e8a-58e4e5b248d0 a aamas:Term ;
+aama:ID804645cb-8596-4e6d-acb6-89b1e9043196 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SententialSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SententialSuffix ;
-	alg:token "lengthing of final vowel" ;
 	alg:sentFunction alg:subordination ;
+	alg:token "lengthing of final vowel" ;
 	.
 
-aama:ID5ddc0cd0-1acc-49a0-9261-b6a4f59f5d7a a aamas:Term ;
+aama:ID3a303a1f-40bd-4c12-ae23-822c6d405957 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SententialSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SententialSuffix ;
-	alg:token "(-(i)ya +) extra rise and fall" ;
 	alg:sentFunction alg:backgrounding ;
+	alg:token "(-(i)ya +) extra rise and fall" ;
 	.
 
-aama:ID3abd8c59-c113-4b70-b890-00c12533ade3 a aamas:Term ;
+aama:ID915f4aa1-e378-42d8-a9dc-920631c7713a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SententialSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SententialSuffix ;
-	alg:token "-iyee + extra rise" ;
 	alg:sentFunction alg:insisting ;
+	alg:token "-iyee + extra rise" ;
 	.
 
-aama:ID7466022f-a0f2-4198-adbe-9d70dc822cd4 a aamas:Term ;
+aama:ID58d7e82f-7e31-47b1-8c4e-58731de625f4 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SententialSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SententialSuffix ;
-	alg:token "(ba)sl" ;
 	alg:sentFunction alg:negation ;
+	alg:token "(ba)sl" ;
 	.
 
-aama:IDc7943cb3-337e-4396-9b81-a965bccea31f a aamas:Term ;
+aama:IDa1c43467-7782-4ba4-94f2-bb83d600e5e2 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-SententialSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SententialSuffix ;
-	alg:token "extra higher rise plus fall" ;
 	alg:sentFunction alg:questionY-N ;
+	alg:token "extra higher rise plus fall" ;
 	.
 
-#TERMCLUSTER:  alagwa-V-ImptvSuff
+#TERMCLUSTER: alagwa-V-ImptvSuff
 
 alg:alagwa-V-ImptvSuff a aamas:Termcluster ;
 	rdfs:label "alagwa-V-ImptvSuff" ;
@@ -2608,70 +2573,70 @@ alg:alagwa-V-ImptvSuff a aamas:Termcluster ;
 	rdfs:comment "MOt6.13" 
 	.
 
-aama:IDe099adde-bff3-406d-8c3c-1e9c802a0c89 a aamas:Term ;
+aama:ID52b8d63d-ce72-40be-9b2f-d9b428757ebf a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-ImptvSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:ImptvSuffix ;
-	alg:token "-a" ;
 	alg:imptvFunction alg:ventive ;
+	alg:token "-a" ;
 	.
 
-aama:IDa2ad8cac-4bfc-4bf8-a508-0f4b37629f6b a aamas:Term ;
+aama:IDf6172787-eb55-4d38-977f-e3af2f544188 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-ImptvSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:ImptvSuffix ;
-	alg:token "-ee'" ;
 	alg:imptvFunction alg:pluralAddressee ;
+	alg:token "-ee'" ;
 	.
 
-aama:ID4ed05f40-d428-4df8-a92c-a4f79afe489d a aamas:Term ;
+aama:IDcd73401a-58cd-4088-a895-a0239980ce3d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-ImptvSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:ImptvSuffix ;
-	alg:token "-eenk" ;
 	alg:imptvFunction alg:object ;
+	alg:token "-eenk" ;
 	.
 
-aama:IDe94711e1-ae69-49bc-a98b-3134de628096 a aamas:Term ;
+aama:ID3bc60729-6b56-4fa7-b316-5bd98e79160b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-ImptvSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:ImptvSuffix ;
-	alg:token "-ak" ;
 	alg:imptvFunction alg:object_pluralAddressee ;
+	alg:token "-ak" ;
 	.
 
-aama:IDa9ab9f30-d143-46f9-8586-975858c7254d a aamas:Term ;
+aama:ID5c775d36-ea27-4a21-bc11-6634403bdcdc a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-ImptvSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:ImptvSuffix ;
-	alg:token "-ank" ;
 	alg:imptvFunction alg:ventive_object ;
+	alg:token "-ank" ;
 	.
 
-aama:ID4e1b7238-5fea-44bf-b6cb-c8f973b30799 a aamas:Term ;
+aama:ID55e03bbe-5385-4712-975b-b81c7a619b8a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-ImptvSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:ImptvSuffix ;
-	alg:token "-ar-ee'" ;
 	alg:imptvFunction alg:ventive_pluralAddressee ;
+	alg:token "-ar-ee'" ;
 	.
 
-aama:IDc656f2f8-6f07-40aa-b51c-d177a46c08ca a aamas:Term ;
+aama:ID7396d0b8-5abf-4c08-894c-bd7cd2f9c83b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-V-ImptvSuff ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:ImptvSuffix ;
-	alg:token "-aar-aak-inn" ;
 	alg:imptvFunction alg:ventive_obejct_pluralAddressee ;
+	alg:token "-aar-aak-inn" ;
 	.
 
-#TERMCLUSTER:  alagwa-VSel-basic
+#TERMCLUSTER: alagwa-VSel-basic
 
 alg:alagwa-VSel-basic a aamas:Termcluster ;
 	rdfs:label "alagwa-VSel-basic" ;
@@ -2679,176 +2644,176 @@ alg:alagwa-VSel-basic a aamas:Termcluster ;
 	rdfs:comment "MOt7.1" 
 	.
 
-aama:IDa8ba5121-440f-4072-8043-9b006037400a a aamas:Term ;
+aama:ID43e65842-16a3-45ec-bad4-bde3dec53f68 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "a" ;
-	alg:gender alg:Common ;
+	alg:selCase alg:SubjSel ;
+	alg:number alg:NA ;
 	alg:person alg:Person1 ;
-	alg:number alg:NA ;
-	alg:selCase alg:SubjSel ;
-	.
-
-aama:ID1ea16420-e619-4563-962d-d70f5cc06f40 a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
+	alg:gender alg:Common ;
 	alg:token "a" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:NA ;
-	alg:selCase alg:SubjSel ;
 	.
 
-aama:ID12971621-590d-45ed-850c-4f8f497d4426 a aamas:Term ;
+aama:IDa506685f-2c64-44aa-8f3b-f5355f865b84 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "i" ;
+	alg:selCase alg:SubjSel ;
+	alg:number alg:NA ;
+	alg:person alg:Person2 ;
 	alg:gender alg:Common ;
+	alg:token "a" ;
+	.
+
+aama:IDdeff6293-460d-49fa-85ff-bfa379ecaffe a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:SubjSel ;
+	alg:number alg:NA ;
 	alg:person alg:Person3 ;
-	alg:number alg:NA ;
-	alg:selCase alg:SubjSel ;
+	alg:gender alg:Common ;
+	alg:token "i" ;
 	.
 
-aama:IDa139a8db-b656-4586-9891-a0b99b644880 a aamas:Term ;
+aama:IDba59d980-041b-4d17-9344-2c27792f2986 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "i" ;
-	alg:gender alg:Fem ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Fem ;
+	alg:token "i" ;
 	.
 
-aama:ID4e2ce7a5-dfee-4640-adfb-68745b13ef63 a aamas:Term ;
+aama:ID9670e2f2-3dbf-4ef1-8ca1-f5b1084e1bfc a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "i" ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
-	.
-
-aama:ID47dcb5d9-cb7f-4115-bc42-6be3a68d7b1e a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:token "i" ;
-	alg:gender alg:Fem ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
 	.
 
-aama:ID0a2771c2-3365-4faf-a436-4fd13f363242 a aamas:Term ;
+aama:ID26dbf85a-990a-46b2-a76d-3e8fcf25ae35 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Fem ;
+	alg:token "i" ;
+	.
+
+aama:ID70c35840-f450-4fd4-b5cc-b70df1b9b8a6 a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
 	alg:clauseTypeSel alg:NonConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Masc ;
 	alg:token "oo" ;
-	alg:gender alg:Masc ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
 	.
 
-aama:ID9a4f7bd2-a6dd-4269-abec-8cb72faae750 a aamas:Term ;
+aama:IDb197674b-7ac4-4558-bf57-e7ff9637631e a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "a" ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
+	alg:token "a" ;
 	.
 
-aama:IDd890631d-e16b-4a55-9714-900512e33789 a aamas:Term ;
+aama:IDb033053e-e1b9-4d13-854a-0c9849a230f8 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "oo" ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
+	alg:token "oo" ;
 	.
 
-aama:IDa8aa1187-f9f6-4fb0-b6e7-3516673bfeb7 a aamas:Term ;
+aama:ID1b8c8931-99fb-4cc7-9861-f91ef1e91f96 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "kunu" ;
-	alg:gender alg:Common ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
+	alg:gender alg:Common ;
+	alg:token "kunu" ;
 	.
 
-aama:IDd390ebfe-6adc-480c-a0b7-f0344d78a52e a aamas:Term ;
+aama:ID2c812128-dc37-4a69-ada5-04626cd60c34 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "kunu" ;
-	alg:gender alg:Common ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
-	.
-
-aama:ID47a74392-a695-4273-8695-e106dfd7d14f a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
-	alg:token "i" ;
 	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
-	.
-
-aama:ID6f446b84-c2c2-4740-b68b-4d390bbc2190 a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:NonConsecutiveSel ;
 	alg:token "kunu" ;
+	.
+
+aama:ID9941ffe3-7381-4b62-bd95-5d16d377e40f a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Common ;
+	alg:token "i" ;
+	.
+
+aama:ID9fb9a689-9ee7-4760-91c2-6af1ab7e7b6e a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:NonConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
 	alg:person alg:PersonRecip ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
+	alg:gender alg:Common ;
+	alg:token "kunu" ;
 	.
 
-#TERMCLUSTER:  alagwa-VSel-basic
+#TERMCLUSTER: alagwa-VSel-basic
 
 alg:alagwa-VSel-basic a aamas:Termcluster ;
 	rdfs:label "alagwa-VSel-basic" ;
@@ -2856,176 +2821,176 @@ alg:alagwa-VSel-basic a aamas:Termcluster ;
 	rdfs:comment "MOt7.2" 
 	.
 
-aama:IDc6cc6678-70f3-427c-a1d4-09924ad8ac91 a aamas:Term ;
+aama:IDcb4c622d-edc6-43ec-bd14-5a38882f132e a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "nanga" ;
-	alg:gender alg:Common ;
+	alg:selCase alg:SubjSel ;
+	alg:number alg:NA ;
 	alg:person alg:Person1 ;
-	alg:number alg:NA ;
-	alg:selCase alg:SubjSel ;
-	.
-
-aama:IDbb6922e8-fec9-4b87-9298-40d12f5c1fb7 a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
+	alg:gender alg:Common ;
 	alg:token "nanga" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person2 ;
-	alg:number alg:NA ;
-	alg:selCase alg:SubjSel ;
 	.
 
-aama:IDb9fc0c16-82c9-4044-b466-28d9f8d6a4a2 a aamas:Term ;
+aama:ID9ce4b812-367a-4c0a-87d1-eb1c8c5be9f9 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "ningi" ;
+	alg:selCase alg:SubjSel ;
+	alg:number alg:NA ;
+	alg:person alg:Person2 ;
 	alg:gender alg:Common ;
+	alg:token "nanga" ;
+	.
+
+aama:IDf62c1ba4-cf4d-40b6-9e30-782b6a0f50c5 a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:SubjSel ;
+	alg:number alg:NA ;
 	alg:person alg:Person3 ;
-	alg:number alg:NA ;
-	alg:selCase alg:SubjSel ;
+	alg:gender alg:Common ;
+	alg:token "ningi" ;
 	.
 
-aama:IDc31ae70d-33eb-4d7a-a22a-6fa2419c2c12 a aamas:Term ;
+aama:ID91117936-f261-4459-8ff1-e730397f18c7 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "ningi" ;
-	alg:gender alg:Fem ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Fem ;
+	alg:token "ningi" ;
 	.
 
-aama:ID243fe8f4-1eef-4a22-808f-1328c8ee7129 a aamas:Term ;
+aama:IDd105c392-ba84-40af-9491-e33225f2bb59 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "ningi" ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
-	.
-
-aama:ID0b901dda-0d41-4324-8b4c-888821cfd439 a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:token "ningi" ;
-	alg:gender alg:Fem ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
 	.
 
-aama:IDe92e9ba7-b014-4986-9a30-f5fcdcb5744e a aamas:Term ;
+aama:ID27558961-79ce-4d17-b86b-b76e07b9ddb5 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Fem ;
+	alg:token "ningi" ;
+	.
+
+aama:IDa8274434-ea68-41f8-8c1d-b2f2cfc2ac78 a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
 	alg:clauseTypeSel alg:ConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
+	alg:gender alg:Masc ;
 	alg:token "nongo" ;
-	alg:gender alg:Masc ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
 	.
 
-aama:IDa5110489-4a3a-4b1b-882e-345cdd3aeec9 a aamas:Term ;
+aama:ID533b657a-b482-4ea9-95bd-9a56ac58864a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "nanga" ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
+	alg:token "nanga" ;
 	.
 
-aama:ID0e43319d-5321-4e23-bece-6ed78edf0009 a aamas:Term ;
+aama:ID21164f39-aa92-4b5d-bc66-f8181cc0403c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "nongo" ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:selCase alg:ObjSel ;
+	alg:token "nongo" ;
 	.
 
-aama:IDe05e13d5-a9a0-4b6c-9d5a-db1199db2796 a aamas:Term ;
+aama:ID335a06c2-0399-48ee-b1e8-5383ec7258d0 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "nungu" ;
-	alg:gender alg:Common ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
+	alg:gender alg:Common ;
+	alg:token "nungu" ;
 	.
 
-aama:ID7701ceba-f755-45e2-b79e-ebdddc33a98c a aamas:Term ;
+aama:IDbf8dfc90-bf15-4cd0-9c0c-2ad22207a807 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "nungu" ;
-	alg:gender alg:Common ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
-	.
-
-aama:IDe7e61546-17aa-467d-96fd-561cc210ddfd a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
-	alg:token "ningi" ;
 	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
-	.
-
-aama:IDf90813b2-e8d9-4c27-9dcb-66cc73ed4b16 a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-basic ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:BasicSel ;
-	alg:clauseTypeSel alg:ConsecutiveSel ;
 	alg:token "nungu" ;
+	.
+
+aama:ID5a1ddaf8-f8c5-4651-b91e-1f813dafc22f a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
 	alg:gender alg:Common ;
+	alg:token "ningi" ;
+	.
+
+aama:ID05ac3739-9799-4b89-ab73-8c476dd1ace1 a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-basic ;
+	alg:clauseTypeSel alg:ConsecutiveSel ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:BasicSel ;
+	alg:selCase alg:ObjSel ;
+	alg:number alg:Plural ;
 	alg:person alg:PersonRecip ;
-	alg:number alg:Plural ;
-	alg:selCase alg:ObjSel ;
+	alg:gender alg:Common ;
+	alg:token "nungu" ;
 	.
 
-#TERMCLUSTER:  alagwa-VSel-prefixes
+#TERMCLUSTER: alagwa-VSel-prefixes
 
 alg:alagwa-VSel-prefixes a aamas:Termcluster ;
 	rdfs:label "alagwa-VSel-prefixes" ;
@@ -3033,195 +2998,195 @@ alg:alagwa-VSel-prefixes a aamas:Termcluster ;
 	rdfs:comment "MOt7.4 :: Cooccurrence order: l/n-s-k-BASIC-SUFFIX-CLITIC" 
 	.
 
-aama:IDdb30d54d-bd17-4875-9216-45251ac1cea8 a aamas:Term ;
+aama:ID9f815bf9-10aa-4ed5-a631-a3247d56ec31 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixes ;
-	alg:token "l-" ;
 	alg:selFunction alg:Optative ;
+	alg:token "l-" ;
 	.
 
-aama:ID5ea76f9b-0ca6-407b-b337-53daa0854a81 a aamas:Term ;
+aama:ID03fe0479-3537-472a-88e4-c85ee3eb59d5 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixes ;
-	alg:token "n-" ;
 	alg:selFunction alg:Consec_Optative ;
-	.
-
-aama:IDcd655994-65ce-42b6-88db-9690d71325be a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-prefixes ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:SelPrefixes ;
 	alg:token "n-" ;
+	.
+
+aama:ID7714ab2e-5c50-480a-8cd2-dd95261c137d a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-prefixes ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:SelPrefixes ;
 	alg:selFunction alg:Ventive_Immediate ;
+	alg:token "n-" ;
 	.
 
-aama:IDdaa8ce0d-4096-45f3-9544-20041f357663 a aamas:Term ;
+aama:IDe639e213-9669-43ab-9c31-6a611d952cde a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixes ;
-	alg:token "na-" ;
 	alg:selFunction alg:SubjFocus ;
+	alg:token "na-" ;
 	.
 
-aama:ID6cb7efe0-a9f5-4deb-9106-5ec5f69a4b88 a aamas:Term ;
+aama:ID21d50e00-cde3-4593-ab62-5e9e89420d34 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixes ;
-	alg:token "s-" ;
 	alg:selFunction alg:Beneficient ;
+	alg:token "s-" ;
 	.
 
-aama:ID485521ef-6a5c-4db9-b56d-4e79ae3b4fa1 a aamas:Term ;
+aama:IDee21ab26-2512-47ae-9c7c-89ac1b00c230 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixes ;
-	alg:token "k-" ;
 	alg:selFunction alg:Subordinate ;
-	.
-
-aama:ID894bcdee-3b1a-4578-9a56-9b598d2b46ba a aamas:Term ;
-	aamas:lang aama:Alagwa ;
-	aamas:memberOf alg:alagwa-VSel-prefixes ;
-	alg:pos alg:Verb ;
-	alg:vmorphClass alg:SelPrefixes ;
 	alg:token "k-" ;
-	alg:selFunction alg:ImpersSubj ;
 	.
 
-aama:ID0a5f6d1c-3b2f-4d36-b437-fd341fb576a7 a aamas:Term ;
+aama:IDc4d4efb9-dda0-4ddf-b9ee-14e32e87474a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixes ;
-	alg:token "ti-" ;
-	alg:selFunction alg:ImpersSubjObjRel ;
+	alg:selFunction alg:ImpersSubj ;
+	alg:token "k-" ;
 	.
 
-#TERMCLUSTER:  alagwa-VSel-prefixes-Exx
+aama:ID602e9cea-b743-4db9-ba09-0078fc3d9141 a aamas:Term ;
+	aamas:lang aama:Alagwa ;
+	aamas:memberOf alg:alagwa-VSel-prefixes ;
+	alg:pos alg:Verb ;
+	alg:vmorphClass alg:SelPrefixes ;
+	alg:selFunction alg:ImpersSubjObjRel ;
+	alg:token "ti-" ;
+	.
+
+#TERMCLUSTER: alagwa-VSel-prefixes-Exx
 
 alg:alagwa-VSel-prefixes-Exx a aamas:Termcluster ;
 	rdfs:label "alagwa-VSel-prefixes-Exx" ;
 	aamas:lang aama:Alagwa ;
-	rdfs:comment "MOt7.5&amp;8" 
+	rdfs:comment "MOt7.5&8" 
 	.
 
-aama:ID2d67ec38-c6c9-465f-8ca8-8dd5c31ab1dc a aamas:Term ;
+aama:ID84ef835e-fcc8-4cac-886f-abbbc433c2a6 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "soo &lt; s-oo" ;
 	alg:selSequence alg:BEN_OM ;
+	alg:token "soo < s-oo" ;
 	.
 
-aama:ID82a8b48d-ba34-44e3-a370-daea326fd3d1 a aamas:Term ;
+aama:ID678d6bb2-bfe6-444a-af30-4116a9297820 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "si &lt; s-i" ;
 	alg:selSequence alg:BEN_O1SG ;
+	alg:token "si < s-i" ;
 	.
 
-aama:IDb077350e-8f95-48c6-8cdb-def482f2b08f a aamas:Term ;
+aama:ID36ee56a1-2c6b-4542-aef6-ef8eceebf802 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "sono &lt; s-oo-nV" ;
 	alg:selSequence alg:BEN_OM_PF ;
+	alg:token "sono < s-oo-nV" ;
 	.
 
-aama:ID562eabee-d2d3-49df-905a-76e4e9694694 a aamas:Term ;
+aama:ID971edfc4-f3f5-468f-9829-9975401d069d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "sikini &lt; s-k-i-nV" ;
 	alg:selSequence alg:BEN_IPS_O1SG_PF ;
+	alg:token "sikini < s-k-i-nV" ;
 	.
 
-aama:ID1c4a5813-e525-4177-b372-18b6bc07b70a a aamas:Term ;
+aama:IDba6667e5-776d-4d07-928f-0ac34f94aa03 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "sokwaa &lt; s-k-oo-aa" ;
 	alg:selSequence alg:BEN_IPS_OM_PAST ;
+	alg:token "sokwaa < s-k-oo-aa" ;
 	.
 
-aama:ID43868ead-6a07-4cc7-a030-2db6a97a9fb0 a aamas:Term ;
+aama:ID0dcc40ab-88f3-4ff2-93e0-a4b11fac7795 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "saka &lt; s-k-a" ;
 	alg:selSequence alg:BEN_IPS_OF ;
+	alg:token "saka < s-k-a" ;
 	.
 
-aama:IDa1054dc2-d3c5-47dc-8336-050a82834ca8 a aamas:Term ;
+aama:IDd25f6666-47d2-4418-a01e-916d2890a300 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "sokono &lt; s-k-oo-nV" ;
 	alg:selSequence alg:BEN_IPS_OM_PF ;
+	alg:token "sokono < s-k-oo-nV" ;
 	.
 
-aama:IDc5ef19ba-5369-426c-8846-8ad07d857594 a aamas:Term ;
+aama:ID6fe0033c-177a-4231-bfe0-aa3e56b0bebd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "sukunu &lt; s-kunu" ;
 	alg:selSequence alg:BEN_IPS_O1PL ;
+	alg:token "sukunu < s-kunu" ;
 	.
 
-aama:IDcf4df235-6984-4705-89e8-4f148745019b a aamas:Term ;
+aama:ID1962a82d-852f-486a-980c-9241fd6ff236 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "siki &lt; s-k-i" ;
 	alg:selSequence alg:BEN_IPS_O2SGF ;
+	alg:token "siki < s-k-i" ;
 	.
 
-aama:ID0395cf79-8154-45f9-b282-e2a39380af89 a aamas:Term ;
+aama:ID71a1b9c2-6e5d-45da-b5a1-d4473c16eed1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "ti-si-k-i-ni" ;
 	alg:selSequence alg:IPS_BEN_SUB_O2F_PF ;
+	alg:token "ti-si-k-i-ni" ;
 	.
 
-aama:ID870985bd-85dc-4ba7-ab69-5777e6c3d8be a aamas:Term ;
+aama:ID441369a8-7112-496d-ad37-781c585e8fdc a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "to-soo-k-o-no" ;
 	alg:selSequence alg:IPS_BEN_SUB_02M_PF ;
+	alg:token "to-soo-k-o-no" ;
 	.
 
-aama:ID4e60fcd8-bb21-4fe4-94f2-1a70cce814f9 a aamas:Term ;
+aama:ID67cf60bb-f9e3-4600-aad6-f13f73be3ae3 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-prefixes-Exx ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelPrefixesExx ;
-	alg:token "tu-su-kunu" ;
 	alg:selSequence alg:IPS_BEN_SUB_O1PL_PF ;
+	alg:token "tu-su-kunu" ;
 	.
 
-#TERMCLUSTER:  alagwa-VSel-suffixes
+#TERMCLUSTER: alagwa-VSel-suffixes
 
 alg:alagwa-VSel-suffixes a aamas:Termcluster ;
 	rdfs:label "alagwa-VSel-suffixes" ;
@@ -3229,43 +3194,43 @@ alg:alagwa-VSel-suffixes a aamas:Termcluster ;
 	rdfs:comment "MOt7.6" 
 	.
 
-aama:ID48c21570-a09e-4c08-975e-98adeb23e48e a aamas:Term ;
+aama:ID8bcb1181-f847-4be1-90d3-2dfb68d0f764 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-suffixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelSuffix ;
-	alg:token "-áa" ;
 	alg:selFunction alg:PastGeneral ;
+	alg:token "-áa" ;
 	.
 
-aama:ID31e00a35-91f4-42d1-b924-dc45cf9635fc a aamas:Term ;
+aama:ID9fd255f7-ea59-4df5-a6ca-17f97068f2c7 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-suffixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelSuffix ;
-	alg:token "-aa" ;
 	alg:selFunction alg:Ablative ;
+	alg:token "-aa" ;
 	.
 
-aama:ID3967343c-15e3-43e1-8ebe-2fe4645930b8 a aamas:Term ;
+aama:ID4c599e22-8a6f-4e49-9c1f-05830007e66d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-suffixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelSuffix ;
-	alg:token "-n(V)" ;
 	alg:selFunction alg:Perfect ;
+	alg:token "-n(V)" ;
 	.
 
-aama:ID86f7d685-876b-4ea3-9c2f-27c4591cf05b a aamas:Term ;
+aama:ID473fe963-5cbc-4f44-857a-24a82d255fac a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-suffixes ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelSuffix ;
-	alg:token "-n" ;
 	alg:selFunction alg:PredFocus ;
+	alg:token "-n" ;
 	.
 
-#TERMCLUSTER:  alagwa-VSel-clitics
+#TERMCLUSTER: alagwa-VSel-clitics
 
 alg:alagwa-VSel-clitics a aamas:Termcluster ;
 	rdfs:label "alagwa-VSel-clitics" ;
@@ -3273,189 +3238,189 @@ alg:alagwa-VSel-clitics a aamas:Termcluster ;
 	rdfs:comment "MOt7.7" 
 	.
 
-aama:IDe308d92f-23c1-41c9-9f56-4bdf05e1316e a aamas:Term ;
+aama:IDd883868c-28a5-40e2-b035-e9ee5bfdcca5 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-clitics ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelClitic ;
-	alg:token "-ee" ;
 	alg:selFunction alg:Applicative ;
+	alg:token "-ee" ;
 	.
 
-aama:IDc63b0b85-f74f-4955-a216-5889b9fbcd80 a aamas:Term ;
+aama:IDf6bed1ff-db0a-4144-9473-2724aaed815f a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-VSel-clitics ;
 	alg:pos alg:Verb ;
 	alg:vmorphClass alg:SelClitic ;
-	alg:token "-ra" ;
 	alg:selFunction alg:Innstrumental ;
+	alg:token "-ra" ;
 	.
 
-#TERMCLUSTER:  alagwa-pro-dem
+#TERMCLUSTER: alagwa-pro-dem
 
 alg:alagwa-pro-dem a aamas:Termcluster ;
 	rdfs:label "alagwa-pro-dem" ;
 	aamas:lang aama:Alagwa ;
-	rdfs:comment "MOt3.2&amp;3 :: Token-note: haree 'woman'%% hiru 'man'%% hira 'men'" 
+	rdfs:comment "MOt3.2&3 :: Token-note: haree 'woman', hiru 'man', hira 'men'" 
 	.
 
-aama:IDe9183ffe-d430-42f1-80bc-761bafc64ebf a aamas:Term ;
+aama:ID54770e88-b22f-4afd-b7d6-304e336cbef4 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "haréeti" ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D1 ;
 	alg:token "-ti" ;
-	alg:degree alg:D1 ;
-	alg:gender alg:Fem ;
+	alg:token-note "haréeti" ;
 	.
 
-aama:ID63e90e42-9643-4898-afbb-ffee60888708 a aamas:Term ;
+aama:ID8ec61af8-3603-481c-a6cb-ad646f0c0730 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "harées" ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D2 ;
 	alg:token "-is" ;
-	alg:degree alg:D2 ;
-	alg:gender alg:Fem ;
+	alg:token-note "harées" ;
 	.
 
-aama:IDd702ae2d-57b3-488e-b9a6-2ef65976d024 a aamas:Term ;
+aama:ID1b96312b-b354-42c0-9963-d6b62f57295a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hareeróq" ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D3 ;
 	alg:token "-r-oo-q" ;
-	alg:degree alg:D3 ;
-	alg:gender alg:Fem ;
+	alg:token-note "hareeróq" ;
 	.
 
-aama:ID647798f1-8aed-4245-9b14-0d5f5f2329c9 a aamas:Term ;
+aama:ID41c447ee-2075-412e-b643-3a7306fda307 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hareeród" ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D4 ;
 	alg:token "-r-oo-!d" ;
-	alg:degree alg:D4 ;
-	alg:gender alg:Fem ;
+	alg:token-note "hareeród" ;
 	.
 
-aama:ID995cad02-40cd-4058-8e29-8990002cbf5e a aamas:Term ;
+aama:IDdab815a3-f62f-4f7d-9fca-5d0272c76e00 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hirúk" ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D1 ;
 	alg:token "-k" ;
-	alg:degree alg:D1 ;
-	alg:gender alg:Masc ;
+	alg:token-note "hirúk" ;
 	.
 
-aama:ID75fd6b6b-1007-4b1b-a49f-bcbfd6ee6c60 a aamas:Term ;
+aama:ID3ffc80a9-b156-40e0-8562-ac506c4520c0 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hirús" ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D2 ;
 	alg:token "is" ;
-	alg:degree alg:D2 ;
-	alg:gender alg:Masc ;
+	alg:token-note "hirús" ;
 	.
 
-aama:ID413ce0d2-7017-46d4-8cd6-81b1fc5673a2 a aamas:Term ;
+aama:ID912ce136-9546-47d8-b044-3ef8dcde8c5a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hiruwóoq" ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D3 ;
 	alg:token "-w-oo-q" ;
-	alg:degree alg:D3 ;
-	alg:gender alg:Masc ;
+	alg:token-note "hiruwóoq" ;
 	.
 
-aama:ID5cd009e0-5d23-4bf8-bea5-488a6645b7aa a aamas:Term ;
+aama:ID9577740c-99c4-4d63-9958-35e2bb79f98d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hiruwód" ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D4 ;
 	alg:token "-w-oo-!d" ;
-	alg:degree alg:D4 ;
-	alg:gender alg:Masc ;
+	alg:token-note "hiruwód" ;
 	.
 
-aama:ID28f82934-1c74-4693-ad27-c9409c06bbca a aamas:Term ;
+aama:ID575f8be3-b7ef-43b3-bc74-f019a11c8b55 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hirawák" ;
-	alg:token "-wa-k" ;
+	alg:gender alg:Neut ;
 	alg:degree alg:D1 ;
-	alg:gender alg:Neut ;
+	alg:token "-wa-k" ;
+	alg:token-note "hirawák" ;
 	.
 
-aama:ID608257b0-c642-4200-8645-43bf49e4d1a0 a aamas:Term ;
+aama:IDbed2e533-b583-4081-ab0d-01c39ea7e9bf a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hirawás" ;
-	alg:token "-wa-is" ;
+	alg:gender alg:Neut ;
 	alg:degree alg:D2 ;
-	alg:gender alg:Neut ;
+	alg:token "-wa-is" ;
+	alg:token-note "hirawás" ;
 	.
 
-aama:ID98371420-f2c6-498d-88cd-e897ff1ed524 a aamas:Term ;
+aama:ID236b210e-2af1-4975-83b2-288dc41d0264 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hirawáq" ;
-	alg:token "-wa-q" ;
+	alg:gender alg:Neut ;
 	alg:degree alg:D3 ;
-	alg:gender alg:Neut ;
+	alg:token "-wa-q" ;
+	alg:token-note "hirawáq" ;
 	.
 
-aama:ID3a617835-a7ea-41b4-a9b6-2b90165e3a16 a aamas:Term ;
+aama:ID09c30d07-6ef2-4e2b-9afe-c00e4af3390a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Demonstrative ;
-	alg:token-note "hirawád" ;
-	alg:token "-wa-!d" ;
-	alg:degree alg:D4 ;
 	alg:gender alg:Neut ;
+	alg:degree alg:D4 ;
+	alg:token "-wa-!d" ;
+	alg:token-note "hirawád" ;
 	.
 
-#TERMCLUSTER:  alagwa-pro-dem-ind
+#TERMCLUSTER: alagwa-pro-dem-ind
 
 alg:alagwa-pro-dem-ind a aamas:Termcluster ;
 	rdfs:label "alagwa-pro-dem-ind" ;
@@ -3463,151 +3428,151 @@ alg:alagwa-pro-dem-ind a aamas:Termcluster ;
 	rdfs:comment "MOt3.4" 
 	.
 
-aama:IDc960ef91-24c5-4a85-b2ad-877cf00befbd a aamas:Term ;
+aama:ID68cfd2c5-64e0-45a6-8848-a576f42506d0 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D1 ;
 	alg:token "héet" ;
-	alg:degree alg:D1 ;
-	alg:gender alg:Fem ;
 	.
 
-aama:ID1b9232a6-1e51-417f-8f5a-9391b0cd07c6 a aamas:Term ;
+aama:IDc6283e0a-bfb9-4448-ad68-d4370b26103c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D2 ;
 	alg:token "tóos" ;
-	alg:degree alg:D2 ;
-	alg:gender alg:Fem ;
 	.
 
-aama:ID871e3891-e103-4592-ae86-c87b508b05d1 a aamas:Term ;
+aama:ID588741c1-f297-4a4e-8d67-3fddba5f2c6c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D3 ;
 	alg:token "tóoq" ;
-	alg:degree alg:D3 ;
-	alg:gender alg:Fem ;
 	.
 
-aama:ID43b9a5aa-2a2d-4e9c-b6b0-5bd59d40d3dc a aamas:Term ;
+aama:ID456fe948-317c-4d19-a9da-d7e3e47fbed7 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Fem ;
+	alg:degree alg:D4 ;
 	alg:token "tód" ;
-	alg:degree alg:D4 ;
-	alg:gender alg:Fem ;
 	.
 
-aama:IDbbb501fb-0fd0-469a-8872-2f8d4ba7f744 a aamas:Term ;
+aama:ID6d4ca844-507f-4a7a-ab38-b0c4022e6051 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D1 ;
 	alg:token "héek" ;
-	alg:degree alg:D1 ;
-	alg:gender alg:Masc ;
 	.
 
-aama:IDcc1960cb-3e53-4272-9dec-ae6eb4b18a58 a aamas:Term ;
+aama:ID61acafa8-77e9-4f9c-9757-8b054d1f933d a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D2 ;
 	alg:token "kóos" ;
-	alg:degree alg:D2 ;
-	alg:gender alg:Masc ;
 	.
 
-aama:IDf71b63d9-d5b0-4c2f-9bb8-7e182bf9e731 a aamas:Term ;
+aama:ID599f6e7d-69f6-4c8b-b728-e4c684627fb0 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D3 ;
 	alg:token "kóoq" ;
-	alg:degree alg:D3 ;
-	alg:gender alg:Masc ;
 	.
 
-aama:ID7ae08544-2a28-4dbd-8255-f682a360db6d a aamas:Term ;
+aama:IDda37fb11-195b-4236-89f8-8f4581fab00a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
+	alg:gender alg:Masc ;
+	alg:degree alg:D4 ;
 	alg:token "kód" ;
-	alg:degree alg:D4 ;
-	alg:gender alg:Masc ;
 	.
 
-aama:ID71571a5a-90e6-4ab6-bcb1-e60285033d95 a aamas:Term ;
+aama:IDd99a5dde-d453-434c-80d1-3a4f924c7f5c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
-	alg:token "kwáak" ;
+	alg:gender alg:Neut ;
 	alg:degree alg:D1 ;
-	alg:gender alg:Neut ;
+	alg:token "kwáak" ;
 	.
 
-aama:IDaa7c5f61-16a2-4450-b132-fc685cf71680 a aamas:Term ;
+aama:ID719b90fd-2dca-4b3f-8ff4-4a8792144e90 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
-	alg:token "kwáas" ;
+	alg:gender alg:Neut ;
 	alg:degree alg:D2 ;
-	alg:gender alg:Neut ;
+	alg:token "kwáas" ;
 	.
 
-aama:ID50dfccde-ce43-411c-bf9d-342690e9dfcb a aamas:Term ;
+aama:ID70905f2b-d789-45b7-ad07-a26464b0084a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
-	alg:token "kwáaq" ;
+	alg:gender alg:Neut ;
 	alg:degree alg:D3 ;
-	alg:gender alg:Neut ;
+	alg:token "kwáaq" ;
 	.
 
-aama:ID9351b2c3-ed7d-4ad6-9938-c8a2ba35fdc9 a aamas:Term ;
+aama:ID4720ea0a-5143-4031-a64e-91c2881352af a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-ind ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeInd ;
-	alg:token "kwád" ;
-	alg:degree alg:D4 ;
 	alg:gender alg:Neut ;
+	alg:degree alg:D4 ;
+	alg:token "kwád" ;
 	.
 
-#TERMCLUSTER:  alagwa-pro-dem-loc
+#TERMCLUSTER: alagwa-pro-dem-loc
 
 alg:alagwa-pro-dem-loc a aamas:Termcluster ;
 	rdfs:label "alagwa-pro-dem-loc" ;
@@ -3615,393 +3580,393 @@ alg:alagwa-pro-dem-loc a aamas:Termcluster ;
 	rdfs:comment "MOt3.5" 
 	.
 
-aama:ID5e64adf4-f019-4a0a-b8a2-5963a344f6f0 a aamas:Term ;
+aama:ID3b766c37-d9f9-4bab-a5dd-bf654c1826e7 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Locative ;
+	alg:degree alg:D1 ;
 	alg:token "ta" ;
-	alg:degree alg:D1 ;
-	alg:case alg:Locative ;
 	.
 
-aama:ID01834a69-ea9d-4ebe-86ce-27f47540fd1d a aamas:Term ;
+aama:ID69cc5dcf-bf63-4f29-8b7a-0cc5a98cfeb4 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Locative ;
+	alg:degree alg:D2 ;
 	alg:token "tays" ;
-	alg:degree alg:D2 ;
-	alg:case alg:Locative ;
 	.
 
-aama:IDff2067c6-84ff-4253-b68c-0f48bf1c86c2 a aamas:Term ;
+aama:ID2636b1c7-f2bb-4817-9c83-0bd1f34ec147 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Locative ;
+	alg:degree alg:D3 ;
 	alg:token "haqa" ;
-	alg:degree alg:D3 ;
-	alg:case alg:Locative ;
 	.
 
-aama:ID7262fc34-67c4-44e4-a813-cf676cd1c90e a aamas:Term ;
+aama:ID0bbee87d-2781-4c0b-befc-1dd0454b46d6 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Locative ;
+	alg:degree alg:D4 ;
 	alg:token "hada" ;
-	alg:degree alg:D4 ;
-	alg:case alg:Locative ;
 	.
 
-aama:ID0130c983-038d-4302-816a-fbba7a8fcaca a aamas:Term ;
+aama:ID85af69e7-4f66-4a17-b86f-5ef9ec894d65 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Allative ;
+	alg:degree alg:D1 ;
 	alg:token "tí" ;
-	alg:degree alg:D1 ;
-	alg:case alg:Allative ;
 	.
 
-aama:IDddfb7824-d94a-4031-a4f0-d716184ef06b a aamas:Term ;
+aama:IDacd9069b-6331-42d5-9ee7-e5cf2bc41bb8 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Allative ;
+	alg:degree alg:D2 ;
 	alg:token "taysí" ;
-	alg:degree alg:D2 ;
-	alg:case alg:Allative ;
 	.
 
-aama:ID9db75830-7d48-4712-ac4d-6d16c351e2c1 a aamas:Term ;
+aama:ID02a7e970-2b39-45ac-8190-48108c13651f a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Allative ;
+	alg:degree alg:D3 ;
 	alg:token "haqí" ;
-	alg:degree alg:D3 ;
-	alg:case alg:Allative ;
 	.
 
-aama:IDae767768-4bb4-4bee-be14-c815da7fab93 a aamas:Term ;
+aama:ID439ffbe5-fe15-4c50-aa9b-e2575eab6798 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
+	alg:case alg:Allative ;
+	alg:degree alg:D4 ;
 	alg:token "hadí" ;
-	alg:degree alg:D4 ;
-	alg:case alg:Allative ;
 	.
 
-aama:IDa4b1c992-9e79-4d8d-a4da-ae4780c486a4 a aamas:Term ;
+aama:ID5e55e050-e3e0-498a-82e5-d4f153c766f2 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
-	alg:token "taa" ;
+	alg:case alg:Ablative ;
 	alg:degree alg:D1 ;
-	alg:case alg:Ablative ;
+	alg:token "taa" ;
 	.
 
-aama:ID2a6d1560-8a19-4fbc-b7aa-ffae6a9909a0 a aamas:Term ;
+aama:IDb85b87ac-8709-4139-ba0c-082ef2c3300b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
-	alg:token "taysaa" ;
+	alg:case alg:Ablative ;
 	alg:degree alg:D2 ;
-	alg:case alg:Ablative ;
+	alg:token "taysaa" ;
 	.
 
-aama:ID767070d2-5977-45f6-8578-9f00e1a67ad0 a aamas:Term ;
+aama:IDe6e03802-1674-49c3-8b07-9c698e02e9be a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
-	alg:token "haqaa" ;
+	alg:case alg:Ablative ;
 	alg:degree alg:D3 ;
-	alg:case alg:Ablative ;
+	alg:token "haqaa" ;
 	.
 
-aama:IDcbebdc8d-cc6d-42d9-b290-e0d48dcbfbb3 a aamas:Term ;
+aama:ID17bac393-6368-4d78-bbb6-601203eef0da a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-dem-loc ;
 	alg:person alg:Person3 ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:DemonstrativeLoc ;
-	alg:token "hadaa" ;
-	alg:degree alg:D4 ;
 	alg:case alg:Ablative ;
+	alg:degree alg:D4 ;
+	alg:token "hadaa" ;
 	.
 
-#TERMCLUSTER:  alagwa-pro-poss-suff
+#TERMCLUSTER: alagwa-pro-poss-suff
 
 alg:alagwa-pro-poss-suff a aamas:Termcluster ;
 	rdfs:label "alagwa-pro-poss-suff" ;
 	aamas:lang aama:Alagwa ;
-	rdfs:comment "MOt3.6&amp;7 :: Token-note: slee 'cow'%% do'o 'house'%% ma'ay 'water'" 
+	rdfs:comment "MOt3.6&7 :: Token-note: slee 'cow', do'o 'house', ma'ay 'water'" 
 	.
 
-aama:ID56b79b37-9442-42ee-9314-1c09014e5b74 a aamas:Term ;
+aama:IDe90e3310-7508-4082-9f11-d9d96489b32b a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "sleerí" ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:token "-r-i" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Fem ;
+	alg:token-note "sleerí" ;
 	.
 
-aama:ID5d031f3c-e457-4bd2-ada1-d31a595433d1 a aamas:Term ;
+aama:IDf993183f-4364-446e-bfa9-414cd76159a0 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "sleeróogu" ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:token "-r-oo-gu" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Fem ;
+	alg:token-note "sleeróogu" ;
 	.
 
-aama:IDaff1cfd9-3bb7-40ec-babe-04c2af318a6f a aamas:Term ;
+aama:ID0e11a784-bf3e-4b85-84ea-45e52feace03 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "sleerós" ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:token "-r-oo-!s" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Fem ;
+	alg:token-note "sleerós" ;
 	.
 
-aama:ID5e93640c-af79-46c9-8d19-8422e79bc859 a aamas:Term ;
+aama:ID41441fe2-b1a6-4844-a666-ce6ae27e28a3 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "sleeróor" ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Plural ;
+	alg:person alg:Person1 ;
 	alg:token "-r-oo-r" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Fem ;
+	alg:token-note "sleeróor" ;
 	.
 
-aama:ID9a0d6054-dc1d-485f-a524-c44d3d2fd55d a aamas:Term ;
+aama:ID828c4fc1-cbc7-4968-8ee2-ca76be2c2e28 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "sleeróokin" ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Plural ;
+	alg:person alg:Person2 ;
 	alg:token "-r-oo-kin" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Fem ;
+	alg:token-note "sleeróokin" ;
 	.
 
-aama:IDf3200362-9004-422b-a4ba-0a081550c01e a aamas:Term ;
+aama:IDb24a2e9e-fa0e-4bdd-a3e0-897afa7f0d7a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "sleeróo'in" ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
 	alg:token "r-oo-'in" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Fem ;
+	alg:token-note "sleeróo'in" ;
 	.
 
-aama:ID834c11aa-95fc-4d86-b959-6327b0132b3b a aamas:Term ;
+aama:IDfeab265a-6bc9-4d1b-b22f-ac2fe490b59e a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "do'owí" ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:token "-w-i " ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Masc ;
+	alg:token-note "do'owí" ;
 	.
 
-aama:IDea12739d-e7c8-4dde-8cac-cffa8f83d5d4 a aamas:Term ;
+aama:IDb80e8d8b-f7e1-436c-b19b-54e0df7ef5ca a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "do'óogu" ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:token "-w-oo-gu" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Masc ;
+	alg:token-note "do'óogu" ;
 	.
 
-aama:IDf82aa634-49b1-46e3-80ae-04aaba364a8f a aamas:Term ;
+aama:ID1730ae2e-6e5f-43c3-bf55-7240641d5af2 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "do'ós" ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:token "-w-oo-!s" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Masc ;
+	alg:token-note "do'ós" ;
 	.
 
-aama:ID15a78a2f-26e5-45a9-8944-768a03db584c a aamas:Term ;
+aama:ID68b1197d-c45b-42c2-98f4-380f50d90967 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "do'óor" ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Plural ;
+	alg:person alg:Person1 ;
 	alg:token "-w-oo-r" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Masc ;
+	alg:token-note "do'óor" ;
 	.
 
-aama:IDbcc66480-52f4-4488-8965-9e593a8e487e a aamas:Term ;
+aama:IDb51f69d4-050c-4276-b163-7cb04ba72aad a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "do'óokin" ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Plural ;
+	alg:person alg:Person2 ;
 	alg:token "-w-oo-kin" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Masc ;
+	alg:token-note "do'óokin" ;
 	.
 
-aama:IDf72020b0-edff-4021-8368-0d4f12a7016f a aamas:Term ;
+aama:ID8b8f37fe-3159-4e2c-a778-2765570c7850 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "do'óo'in" ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
 	alg:token "-w-oo-'in" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Masc ;
+	alg:token-note "do'óo'in" ;
 	.
 
-aama:IDcff0d31d-03dc-4bd6-9ca3-51f94b6b11cf a aamas:Term ;
+aama:ID3ff7a94a-800a-4c6a-9784-9ec774d1f27c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "ma'aywí" ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:token "-wa-i " ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Neut ;
+	alg:token-note "ma'aywí" ;
 	.
 
-aama:ID5149c383-56f9-4593-ac11-6ca0ed239ce4 a aamas:Term ;
+aama:ID57918944-f609-4ace-964c-8a7a10a1080f a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "ma'aywágu" ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:token "-wa-gu" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Neut ;
+	alg:token-note "ma'aywágu" ;
 	.
 
-aama:ID35dbbe59-fb34-4e67-a1c6-18c415d8256a a aamas:Term ;
+aama:ID5d281318-0358-4682-84cb-dec79157b276 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "ma'aywás" ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:token "-wa-!s" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Neut ;
+	alg:token-note "ma'aywás" ;
 	.
 
-aama:ID0c498f3c-8238-433e-8e0d-f774167fda09 a aamas:Term ;
+aama:IDe5c95d3d-f7cf-455d-a711-b352aea4bf39 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "ma'aywátin" ;
-	alg:token "-wa-tin" ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Neut ;
+	alg:token "-wa-tin" ;
+	alg:token-note "ma'aywátin" ;
 	.
 
-aama:ID8a8ad9c0-7f64-4307-9660-0a5cbfab6e70 a aamas:Term ;
+aama:ID7dfebfb6-9062-4fa5-ba8c-19b38fb57cd3 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "ma'aywákin" ;
-	alg:token "-wa-kin" ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Neut ;
+	alg:token "-wa-kin" ;
+	alg:token-note "ma'aywákin" ;
 	.
 
-aama:ID14a332f6-7798-4651-b70c-e7ef855ab678 a aamas:Term ;
+aama:ID808bfdd0-024d-4902-9546-1ff67ec662f2 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-suff ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossSuff ;
-	alg:token-note "ma'aywá'in" ;
-	alg:token "-wa-'in" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
 	alg:genHead alg:Neut ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:token "-wa-'in" ;
+	alg:token-note "ma'aywá'in" ;
 	.
 
-#TERMCLUSTER:  alagwa-pro-poss-ind
+#TERMCLUSTER: alagwa-pro-poss-ind
 
 alg:alagwa-pro-poss-ind a aamas:Termcluster ;
 	rdfs:label "alagwa-pro-poss-ind" ;
@@ -4009,223 +3974,223 @@ alg:alagwa-pro-poss-ind a aamas:Termcluster ;
 	rdfs:comment "MOt3.8" 
 	.
 
-aama:ID5d87f2d8-a05a-47d8-b5a0-f57a64447b7e a aamas:Term ;
+aama:IDb9a1a7b0-5b18-41a6-94eb-fff3e81bf5f1 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:token "tóo'" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Fem ;
 	.
 
-aama:IDd203fb13-5b8f-486a-9fe1-e0545b4d8e39 a aamas:Term ;
+aama:IDaaf134eb-141c-402c-9df3-64ecee4555ee a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:token "tóog" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Fem ;
 	.
 
-aama:IDe0810173-3952-416a-9da7-21c555b7db4c a aamas:Term ;
+aama:ID3771e30d-cf21-453d-aa1b-d93ccda98018 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:token "tóos" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Fem ;
 	.
 
-aama:ID61606284-baea-4667-a549-e1f3a415f477 a aamas:Term ;
+aama:ID0509ac47-63ec-4992-a05c-b5949ea09e56 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Plural ;
+	alg:person alg:Person1 ;
 	alg:token "tóor" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Fem ;
 	.
 
-aama:IDbfd9cee4-4e16-4d7c-8880-545762beff0d a aamas:Term ;
+aama:IDfcfff451-b54f-41d5-bd69-9736c1e28a0a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Plural ;
+	alg:person alg:Person2 ;
 	alg:token "tóokin" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Fem ;
 	.
 
-aama:ID36e895ac-949e-4f87-ad7f-ea53255fb6f2 a aamas:Term ;
+aama:ID222ff9ed-a30a-48e1-8bdb-7d5b70315c1e a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Fem ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
 	alg:token "tóo'in" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Fem ;
 	.
 
-aama:ID993abc6c-a57e-4c81-b2b0-8ec92ca78b16 a aamas:Term ;
+aama:ID705c95b5-ccc6-479d-961a-14c263469c14 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:token "kóo'" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Masc ;
 	.
 
-aama:ID18159e51-8460-4f8a-9ce2-f3a48f010cb3 a aamas:Term ;
+aama:IDa4e546ce-ff8b-47c7-9170-6f1221d8c5b8 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:token "kóog" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Masc ;
 	.
 
-aama:ID866eeb8c-a8a0-4f70-b507-14b6e3c34fe7 a aamas:Term ;
+aama:ID624be49e-ae45-407b-adc2-631638e94d75 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:token "kóos" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Masc ;
 	.
 
-aama:IDd5fccb26-bb3e-4922-a2ed-cd8ce29bcad6 a aamas:Term ;
+aama:ID2c026282-9dcc-487f-8792-c7c27dc587ed a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Plural ;
+	alg:person alg:Person1 ;
 	alg:token "kóor" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Masc ;
 	.
 
-aama:IDffc08166-3f78-47db-b222-b5615df67273 a aamas:Term ;
+aama:IDd4cb08d3-a725-4d40-af00-d5955c288acd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Plural ;
+	alg:person alg:Person2 ;
 	alg:token "kóokin" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Masc ;
 	.
 
-aama:ID7b01c4ca-c79f-48bc-9329-42e8cc6d62db a aamas:Term ;
+aama:ID4aab7ef0-69c3-407e-94cf-3be315ab6547 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Masc ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
 	alg:token "kóo'in" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Masc ;
 	.
 
-aama:IDaad80080-2198-49d0-ae64-c4b8fcc4905d a aamas:Term ;
+aama:IDc3a69f44-7534-4b69-89f7-4c52ce7f7e96 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
 	alg:token "kwá'" ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Neut ;
 	.
 
-aama:IDe219fedf-07b3-4ae2-aea9-e6b5753395d4 a aamas:Term ;
+aama:ID22f50602-6f3e-43ce-b113-6250eb8c46cd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:token "kwág" ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Neut ;
 	.
 
-aama:ID3fc34b75-87cb-4249-b5fc-77a1624db0ce a aamas:Term ;
+aama:ID60fceee7-5863-4436-af90-990957be4f95 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
 	alg:token "kwás" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
-	alg:genHead alg:Neut ;
 	.
 
-aama:ID8d665dd9-9378-43cf-8694-df0cf01d5019 a aamas:Term ;
+aama:ID6b4cc93f-e560-4a51-8341-8245e17ad69e a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
-	alg:token "kwátin" ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Neut ;
+	alg:token "kwátin" ;
 	.
 
-aama:ID728e6379-31ca-46f8-a924-edc52bf3bf52 a aamas:Term ;
+aama:IDbdb7c961-0e4c-4396-8d5f-e95ecd396568 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
-	alg:token "kwákin" ;
+	alg:genHead alg:Neut ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
-	alg:genHead alg:Neut ;
+	alg:token "kwákin" ;
 	.
 
-aama:IDf2c8aebf-80aa-4105-92e7-f1e8736975a1 a aamas:Term ;
+aama:ID0a754770-79f7-4b8c-b05e-91e5ddaf138c a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-poss-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:PossInd ;
-	alg:token "kwá'in" ;
-	alg:person alg:Person3 ;
-	alg:number alg:Plural ;
 	alg:genHead alg:Neut ;
+	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:token "kwá'in" ;
 	.
 
-#TERMCLUSTER:  alagwa-dir-suff
+#TERMCLUSTER: alagwa-dir-suff
 
 alg:alagwa-dir-suff a aamas:Termcluster ;
 	rdfs:label "alagwa-dir-suff" ;
@@ -4233,47 +4198,47 @@ alg:alagwa-dir-suff a aamas:Termcluster ;
 	rdfs:comment "MOt3.9" 
 	.
 
-aama:ID83d80011-c665-4884-b412-e5162f77763e a aamas:Term ;
+aama:ID8559e3ac-8f61-41e3-ad00-c1bed1ebc616 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-dir-suff ;
 	alg:pos alg:Noun ;
 	alg:proClass alg:DirSuff ;
+	alg:case alg:Allative ;
+	alg:formClass alg:Long ;
 	alg:token "-li" ;
-	alg:formClass alg:Long ;
-	alg:case alg:Allative ;
 	.
 
-aama:IDb4dea365-26ac-48d5-b32f-775abec4ac19 a aamas:Term ;
+aama:ID9296add9-1249-4435-a3ee-83f1e44d68cd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-dir-suff ;
 	alg:pos alg:Noun ;
 	alg:proClass alg:DirSuff ;
+	alg:case alg:Allative ;
+	alg:formClass alg:Long ;
 	alg:token "-i" ;
-	alg:formClass alg:Long ;
-	alg:case alg:Allative ;
 	.
 
-aama:ID8648a69d-aa1b-493b-8704-329a8151021f a aamas:Term ;
+aama:ID2bde7d9c-1600-496c-b909-d2b14976acfd a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-dir-suff ;
 	alg:pos alg:Noun ;
 	alg:proClass alg:DirSuff ;
+	alg:case alg:Ablative ;
+	alg:formClass alg:Short ;
 	alg:token "-ka" ;
-	alg:formClass alg:Short ;
-	alg:case alg:Ablative ;
 	.
 
-aama:IDe76e66ad-c8b6-4ed6-9a51-37f6c9fc68bb a aamas:Term ;
+aama:ID5a37da8a-041b-43fa-aab3-7ef34ea03b4a a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-dir-suff ;
 	alg:pos alg:Noun ;
 	alg:proClass alg:DirSuff ;
-	alg:token "-a" ;
-	alg:formClass alg:Short ;
 	alg:case alg:Ablative ;
+	alg:formClass alg:Short ;
+	alg:token "-a" ;
 	.
 
-#TERMCLUSTER:  alagwa-pro-anaphoric
+#TERMCLUSTER: alagwa-pro-anaphoric
 
 alg:alagwa-pro-anaphoric a aamas:Termcluster ;
 	rdfs:label "alagwa-pro-anaphoric" ;
@@ -4281,37 +4246,37 @@ alg:alagwa-pro-anaphoric a aamas:Termcluster ;
 	rdfs:comment "MOt3.11" 
 	.
 
-aama:ID6504bb86-497a-4c51-a1ea-ae581c643937 a aamas:Term ;
+aama:IDf48ceec6-dd8e-44e4-91fa-015ffe16fada a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-anaphoric ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Anaphoric ;
-	alg:token "tá" ;
 	alg:gender alg:Fem ;
+	alg:token "tá" ;
 	.
 
-aama:ID4dcde9a7-6e61-4112-977f-e84c5321aa24 a aamas:Term ;
+aama:IDc34a0f11-5997-4e27-8b3b-d2bd0b5c6015 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-anaphoric ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Anaphoric ;
-	alg:token "kó" ;
 	alg:gender alg:Masc ;
+	alg:token "kó" ;
 	.
 
-aama:ID42226dfd-2638-4497-9b65-d47fd016dc8e a aamas:Term ;
+aama:IDe4c2a470-63ae-4c60-98aa-2ce3f48ded25 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-anaphoric ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Anaphoric ;
-	alg:token "kó" ;
 	alg:gender alg:Neut ;
+	alg:token "kó" ;
 	.
 
-#TERMCLUSTER:  alagwa-pro-ind
+#TERMCLUSTER: alagwa-pro-ind
 
 alg:alagwa-pro-ind a aamas:Termcluster ;
 	rdfs:label "alagwa-pro-ind" ;
@@ -4319,86 +4284,87 @@ alg:alagwa-pro-ind a aamas:Termcluster ;
 	rdfs:comment "MOt3.12" 
 	.
 
-aama:IDf4ad8a01-0c60-49e4-a5b2-d8a02e2fa555 a aamas:Term ;
+aama:IDb984a5c0-82fe-44a1-a37b-516c4e578df0 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Independent ;
+	alg:number alg:Singular ;
+	alg:person alg:Person1 ;
+	alg:gender alg:Common ;
 	alg:token "ána" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person1 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID61566b81-6bb1-444b-8023-6fd16d57f361 a aamas:Term ;
+aama:ID9c639558-d9e2-407d-9d6b-77cec6f4aa00 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Independent ;
-	alg:token "kíi" ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:gender alg:Fem ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
+	alg:token "kíi" ;
 	.
 
-aama:ID18838fea-cd93-4da0-af4e-b7a4607e21fe a aamas:Term ;
+aama:ID21b7cc14-42c6-4676-a2e9-25751a99e3c4 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Independent ;
-	alg:token "kúu" ;
+	alg:number alg:Singular ;
+	alg:person alg:Person2 ;
 	alg:gender alg:Masc ;
-	alg:person alg:Person2 ;
-	alg:number alg:Singular ;
+	alg:token "kúu" ;
 	.
 
-aama:ID1a5961f7-4c77-44da-93ad-6baf575999e5 a aamas:Term ;
+aama:IDd1ed5946-6b6a-4088-b856-492f13e51d55 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Independent ;
+	alg:number alg:Singular ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
 	alg:token "ín" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
-	alg:number alg:Singular ;
 	.
 
-aama:ID914a3a6e-b818-4cfc-8fb7-502bcb96a827 a aamas:Term ;
+aama:IDfbe75221-0360-4886-843f-7905b41f82c6 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Independent ;
-	alg:token "handá ~ andá" ;
-	alg:gender alg:Common ;
+	alg:number alg:Plural ;
 	alg:person alg:Person1 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "handá ~ andá" ;
 	.
 
-aama:ID465c3911-8447-40af-8a53-8c2a07a7200e a aamas:Term ;
+aama:ID8a78c4d1-8b73-409a-b03d-ff15e540f360 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Independent ;
-	alg:token "hunguráa ~ kunguráa" ;
-	alg:gender alg:Common ;
+	alg:number alg:Plural ;
 	alg:person alg:Person2 ;
-	alg:number alg:Plural ;
+	alg:gender alg:Common ;
+	alg:token "hunguráa ~ kunguráa" ;
 	.
 
-aama:ID00825dc6-3fc3-4fa0-978d-2a2c61bd39f9 a aamas:Term ;
+aama:ID29649edc-33aa-4365-be10-5697452bfd65 a aamas:Term ;
 	aamas:lang aama:Alagwa ;
 	aamas:memberOf alg:alagwa-pro-ind ;
-	alg:pos alg:Pronoun ;
 	alg:pmorphClass alg:ProMorph ;
+	alg:pos alg:Pronoun ;
 	alg:proClass alg:Independent ;
-	alg:token "iná" ;
-	alg:gender alg:Common ;
-	alg:person alg:Person3 ;
 	alg:number alg:Plural ;
+	alg:person alg:Person3 ;
+	alg:gender alg:Common ;
+	alg:token "iná" ;
 	.
+
